@@ -4,19 +4,19 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Módulo 12 Introducción a R y RStudio | theory_and_practice_of_field_experiments.knit</title>
+  <title>Módulo 12 Introducción a R y RStudio | theory_and_practice_of_field_experiments_spanish.utf8</title>
   <meta name="description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Módulo 12 Introducción a R y RStudio | theory_and_practice_of_field_experiments.knit" />
+  <meta property="og:title" content="Módulo 12 Introducción a R y RStudio | theory_and_practice_of_field_experiments_spanish.utf8" />
   <meta property="og:type" content="book" />
   
   
   <meta property="og:description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
-  <meta name="github-repo" content="egap/theory_and_practice_of_field_experiments" />
+  <meta name="github-repo" content="egap/theory_and_practice_of_field_experiments_spanish" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Módulo 12 Introducción a R y RStudio | theory_and_practice_of_field_experiments.knit" />
+  <meta name="twitter:title" content="Módulo 12 Introducción a R y RStudio | theory_and_practice_of_field_experiments_spanish.utf8" />
   
   <meta name="twitter:description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
   
@@ -32,7 +32,6 @@
   
 <link rel="prev" href="glosario-de-términos.html"/>
 <link rel="next" href="referencias.html"/>
-<script src="book_assets/header-attrs/header-attrs.js"></script>
 <script src="book_assets/jquery/jquery.min.js"></script>
 <link href="book_assets/gitbook/css/style.css" rel="stylesheet" />
 <link href="book_assets/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -50,8 +49,6 @@
 
 
 
-<link href="book_assets/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="book_assets/anchor-sections/anchor-sections.js"></script>
 
         <script>
 /* ========================================================================
@@ -399,7 +396,6 @@ $(document).ready(function () {
   window.initializeCodeFolding("show" === "show");
 });
 </script>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QN1VN8C67"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-0QN1VN8C67'); </script>
 <script type="application/json" class="js-hypothesis-config">
 
@@ -411,27 +407,25 @@ $(document).ready(function () {
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -440,9 +434,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -475,29 +469,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -514,137 +485,113 @@ div.csl-indent {
 <li><a href="./"><img src="Images/egap-logo.png" alt="EGAP Logo" width=100>EGAP Learning Days</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
-<ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cómo-usar-este-libro"><i class="fa fa-check"></i><b>1.1</b> Cómo usar este libro</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#nos-encantaría-saber-lo-que-piensa"><i class="fa fa-check"></i><b>1.2</b> ¡Nos encantaría saber lo que piensa!</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i><b>1.3</b> Agradecimientos</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html"><i class="fa fa-check"></i><b>2</b> El Proceso del diseño de investigación</a>
-<ul>
+<li class="chapter" data-level="2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html"><i class="fa fa-check"></i><b>2</b> El Proceso del diseño de investigación</a><ul>
 <li class="chapter" data-level="2.1" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#contenido-principal"><i class="fa fa-check"></i><b>2.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="2.2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#diapositivas"><i class="fa fa-check"></i><b>2.2</b> Diapositivas</a></li>
 <li class="chapter" data-level="2.3" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#formulario-de-diseño-y-pre-registro"><i class="fa fa-check"></i><b>2.3</b> Formulario de diseño y pre-registro</a></li>
-<li class="chapter" data-level="2.4" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#recursos"><i class="fa fa-check"></i><b>2.4</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="2.4" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#recursos"><i class="fa fa-check"></i><b>2.4</b> Recursos</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#guía-de-métodos-de-egap"><i class="fa fa-check"></i><b>2.4.1</b> Guía de métodos de EGAP</a></li>
 <li class="chapter" data-level="2.4.2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#libros-capítulos-y-artículos"><i class="fa fa-check"></i><b>2.4.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="2.4.3" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#herramientas"><i class="fa fa-check"></i><b>2.4.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="inferencia-causal.html"><a href="inferencia-causal.html"><i class="fa fa-check"></i><b>3</b> Inferencia causal</a>
-<ul>
+<li class="chapter" data-level="3" data-path="inferencia-causal.html"><a href="inferencia-causal.html"><i class="fa fa-check"></i><b>3</b> Inferencia causal</a><ul>
 <li class="chapter" data-level="3.1" data-path="inferencia-causal.html"><a href="inferencia-causal.html#contenido-principal-1"><i class="fa fa-check"></i><b>3.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="3.2" data-path="inferencia-causal.html"><a href="inferencia-causal.html#diapositivas-1"><i class="fa fa-check"></i><b>3.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#recursos-1"><i class="fa fa-check"></i><b>3.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#recursos-1"><i class="fa fa-check"></i><b>3.3</b> Recursos</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="inferencia-causal.html"><a href="inferencia-causal.html#guías-de-métodos-de-egap"><i class="fa fa-check"></i><b>3.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="3.3.2" data-path="inferencia-causal.html"><a href="inferencia-causal.html#causalinference-cites"><i class="fa fa-check"></i><b>3.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="3.3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#informes-de-egap-sobre-políticas-públicas"><i class="fa fa-check"></i><b>3.3.3</b> Informes de EGAP sobre políticas públicas:</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="aleatorización.html"><a href="aleatorización.html"><i class="fa fa-check"></i><b>4</b> Aleatorización</a>
-<ul>
+<li class="chapter" data-level="4" data-path="aleatorización.html"><a href="aleatorización.html"><i class="fa fa-check"></i><b>4</b> Aleatorización</a><ul>
 <li class="chapter" data-level="4.1" data-path="aleatorización.html"><a href="aleatorización.html#contenido-principal-2"><i class="fa fa-check"></i><b>4.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="4.2" data-path="aleatorización.html"><a href="aleatorización.html#diapositivas-2"><i class="fa fa-check"></i><b>4.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="4.3" data-path="aleatorización.html"><a href="aleatorización.html#recursos-2"><i class="fa fa-check"></i><b>4.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="4.3" data-path="aleatorización.html"><a href="aleatorización.html#recursos-2"><i class="fa fa-check"></i><b>4.3</b> Recursos</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="aleatorización.html"><a href="aleatorización.html#guías-de-métodos-de-egap-1"><i class="fa fa-check"></i><b>4.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="4.3.2" data-path="aleatorización.html"><a href="aleatorización.html#libros-capítulos-y-artículos-1"><i class="fa fa-check"></i><b>4.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="4.3.3" data-path="aleatorización.html"><a href="aleatorización.html#informes-de-egap-sobre-políticas-públicas-1"><i class="fa fa-check"></i><b>4.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 <li class="chapter" data-level="4.3.4" data-path="aleatorización.html"><a href="aleatorización.html#herramientas-1"><i class="fa fa-check"></i><b>4.3.4</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de hipótesis</a>
-<ul>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de hipótesis</a><ul>
 <li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#contenido-principal-3"><i class="fa fa-check"></i><b>5.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#diapositivas-3"><i class="fa fa-check"></i><b>5.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#recursos-3"><i class="fa fa-check"></i><b>5.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#recursos-3"><i class="fa fa-check"></i><b>5.3</b> Recursos</a><ul>
 <li class="chapter" data-level="5.3.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#guías-de-métodos-de-egap-2"><i class="fa fa-check"></i><b>5.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="5.3.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#libros-capítulos-y-artículos-2"><i class="fa fa-check"></i><b>5.3.2</b> Libros, capítulos y artículos</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html"><i class="fa fa-check"></i><b>6</b> Estimandos y estimadores</a>
-<ul>
+<li class="chapter" data-level="6" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html"><i class="fa fa-check"></i><b>6</b> Estimandos y estimadores</a><ul>
 <li class="chapter" data-level="6.1" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#contenido-principal-4"><i class="fa fa-check"></i><b>6.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="6.2" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#diapositivas-4"><i class="fa fa-check"></i><b>6.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="6.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#recursos-4"><i class="fa fa-check"></i><b>6.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="6.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#recursos-4"><i class="fa fa-check"></i><b>6.3</b> Recursos</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#guías-de-métodos-de-egap-3"><i class="fa fa-check"></i><b>6.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="6.3.2" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#libros-capítulos-y-artículos-3"><i class="fa fa-check"></i><b>6.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="6.3.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#herramientas-2"><i class="fa fa-check"></i><b>6.3.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html"><i class="fa fa-check"></i><b>7</b> Poder estadístico y diagnosticandos del diseño</a>
-<ul>
+<li class="chapter" data-level="7" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html"><i class="fa fa-check"></i><b>7</b> Poder estadístico y diagnosticandos del diseño</a><ul>
 <li class="chapter" data-level="7.1" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#contenido-principal-5"><i class="fa fa-check"></i><b>7.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="7.2" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#diapositivas-5"><i class="fa fa-check"></i><b>7.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="7.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#recursos-5"><i class="fa fa-check"></i><b>7.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="7.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#recursos-5"><i class="fa fa-check"></i><b>7.3</b> Recursos</a><ul>
 <li class="chapter" data-level="7.3.1" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#guías-de-métodos-de-egap-4"><i class="fa fa-check"></i><b>7.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="7.3.2" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#informes-de-egap-sobre-políticas-públicas-y-paps"><i class="fa fa-check"></i><b>7.3.2</b> Informes de EGAP sobre políticas públicas y PAPs</a></li>
 <li class="chapter" data-level="7.3.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#herramientas-3"><i class="fa fa-check"></i><b>7.3.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="medición.html"><a href="medición.html"><i class="fa fa-check"></i><b>8</b> Medición</a>
-<ul>
+<li class="chapter" data-level="8" data-path="medición.html"><a href="medición.html"><i class="fa fa-check"></i><b>8</b> Medición</a><ul>
 <li class="chapter" data-level="8.1" data-path="medición.html"><a href="medición.html#contenido-principal-6"><i class="fa fa-check"></i><b>8.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="8.2" data-path="medición.html"><a href="medición.html#diapositivas-6"><i class="fa fa-check"></i><b>8.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="8.3" data-path="medición.html"><a href="medición.html#recursos-6"><i class="fa fa-check"></i><b>8.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="8.3" data-path="medición.html"><a href="medición.html#recursos-6"><i class="fa fa-check"></i><b>8.3</b> Recursos</a><ul>
 <li class="chapter" data-level="8.3.1" data-path="medición.html"><a href="medición.html#guías-de-métodos-de-egap-5"><i class="fa fa-check"></i><b>8.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="8.3.2" data-path="medición.html"><a href="medición.html#libros-capítulos-y-artículos-4"><i class="fa fa-check"></i><b>8.3.2</b> Libros, Capítulos y Artículos</a></li>
 <li class="chapter" data-level="8.3.3" data-path="medición.html"><a href="medición.html#informes-de-egap-sobre-políticas-públicas-2"><i class="fa fa-check"></i><b>8.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><i class="fa fa-check"></i><b>9</b> Amenazas a la validez interna de los experimentos aleatorios</a>
-<ul>
+<li class="chapter" data-level="9" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><i class="fa fa-check"></i><b>9</b> Amenazas a la validez interna de los experimentos aleatorios</a><ul>
 <li class="chapter" data-level="9.1" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#contenido-principal-7"><i class="fa fa-check"></i><b>9.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="9.2" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#diapositivas-7"><i class="fa fa-check"></i><b>9.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="9.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#recursos-7"><i class="fa fa-check"></i><b>9.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="9.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#recursos-7"><i class="fa fa-check"></i><b>9.3</b> Recursos</a><ul>
 <li class="chapter" data-level="9.3.1" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#guías-de-métodos-de-egap-6"><i class="fa fa-check"></i><b>9.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="9.3.2" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#libros-capítulos-y-artículos-5"><i class="fa fa-check"></i><b>9.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="9.3.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#informes-de-egap-sobre-políticas-públicas-3"><i class="fa fa-check"></i><b>9.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>10</b> Consideraciones éticas</a>
-<ul>
+<li class="chapter" data-level="10" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>10</b> Consideraciones éticas</a><ul>
 <li class="chapter" data-level="10.1" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#contenido-principal-8"><i class="fa fa-check"></i><b>10.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="10.2" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#diapositivas-8"><i class="fa fa-check"></i><b>10.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="10.3" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#recursos-8"><i class="fa fa-check"></i><b>10.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="10.3" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#recursos-8"><i class="fa fa-check"></i><b>10.3</b> Recursos</a><ul>
 <li class="chapter" data-level="10.3.1" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#libros-capítulos-y-artículos-6"><i class="fa fa-check"></i><b>10.3.1</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="10.3.2" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#artículos-ciéntificos-y-paps"><i class="fa fa-check"></i><b>10.3.2</b> Artículos ciéntificos y PAPs</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="apéndice.html"><a href="apéndice.html"><i class="fa fa-check"></i>Apéndice</a></li>
-<li class="chapter" data-level="11" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html"><i class="fa fa-check"></i><b>11</b> Glosario de términos</a>
-<ul>
+<li class="chapter" data-level="11" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html"><i class="fa fa-check"></i><b>11</b> Glosario de términos</a><ul>
 <li class="chapter" data-level="11.1" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#conceptos-claves"><i class="fa fa-check"></i><b>11.1</b> Conceptos claves</a></li>
 <li class="chapter" data-level="11.2" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#inferencia-estadística"><i class="fa fa-check"></i><b>11.2</b> Inferencia estadística</a></li>
 <li class="chapter" data-level="11.3" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#estrategias-de-aleatorización"><i class="fa fa-check"></i><b>11.3</b> Estrategias de aleatorización</a></li>
 <li class="chapter" data-level="11.4" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#diseños-factoriales"><i class="fa fa-check"></i><b>11.4</b> Diseños factoriales</a></li>
 <li class="chapter" data-level="11.5" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#amenazas"><i class="fa fa-check"></i><b>11.5</b> Amenazas</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>12</b> Introducción a R y RStudio</a>
-<ul>
+<li class="chapter" data-level="12" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>12</b> Introducción a R y RStudio</a><ul>
 <li class="chapter" data-level="12.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#r-y-rstudio"><i class="fa fa-check"></i><b>12.1</b> R y RStudio</a></li>
-<li class="chapter" data-level="12.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descarga-de-r-y-rstudio"><i class="fa fa-check"></i><b>12.2</b> Descarga de R y RStudio</a>
-<ul>
+<li class="chapter" data-level="12.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descarga-de-r-y-rstudio"><i class="fa fa-check"></i><b>12.2</b> Descarga de R y RStudio</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descargando-r"><i class="fa fa-check"></i><b>12.2.1</b> Descargando R</a></li>
 <li class="chapter" data-level="12.2.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descargando-rstudio"><i class="fa fa-check"></i><b>12.2.2</b> Descargando RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="12.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#interfaz-de-rstudio"><i class="fa fa-check"></i><b>12.3</b> Interfaz de RStudio</a>
-<ul>
+<li class="chapter" data-level="12.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#interfaz-de-rstudio"><i class="fa fa-check"></i><b>12.3</b> Interfaz de RStudio</a><ul>
 <li class="chapter" data-level="12.3.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#consola"><i class="fa fa-check"></i><b>12.3.1</b> Consola</a></li>
 <li class="chapter" data-level="12.3.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#editor"><i class="fa fa-check"></i><b>12.3.2</b> Editor</a></li>
 <li class="chapter" data-level="12.3.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#entorno-historial-y-otros"><i class="fa fa-check"></i><b>12.3.3</b> Entorno, historial y otros</a></li>
 <li class="chapter" data-level="12.3.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#misceláneo"><i class="fa fa-check"></i><b>12.3.4</b> Misceláneo</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#aprendiendo-a-usar-r"><i class="fa fa-check"></i><b>12.4</b> Aprendiendo a usar R</a>
-<ul>
+<li class="chapter" data-level="12.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#aprendiendo-a-usar-r"><i class="fa fa-check"></i><b>12.4</b> Aprendiendo a usar R</a><ul>
 <li class="chapter" data-level="12.4.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#recursos-en-línea"><i class="fa fa-check"></i><b>12.4.1</b> Recursos en línea</a></li>
 <li class="chapter" data-level="12.4.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#práctica-básica"><i class="fa fa-check"></i><b>12.4.2</b> Práctica básica</a></li>
 </ul></li>
@@ -671,17 +618,17 @@ Una introducción de los Learning Days de EGAP</div></a>
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introducción-a-r-y-rstudio" class="section level1 tabset" number="12">
+<div id="introducción-a-r-y-rstudio" class="section level1 tabset">
 <h1><span class="header-section-number">Módulo 12</span> Introducción a R y RStudio</h1>
 <p>A lo largo del libro incluimos código de R que usamos para estimar, hacer simulaciones y dar ejemplos. Usamos RStudio para crear las diapositivas. Así mismo asumimos que usted utilizará R Markdown para personalizarlas de acuerdo al uso que usted quiera darles. A continuación, incluimos guías para configurar R y RStudio en su computador, así como algunos comandos básicos que se utilizan con frecuencia.</p>
-<div id="r-y-rstudio" class="section level2" number="12.1">
+<div id="r-y-rstudio" class="section level2">
 <h2><span class="header-section-number">12.1</span> R y RStudio</h2>
 <p>R es un entorno de software libre que se utiliza con mayor frecuencia para hacer análisis y cálculos estadísticos. Ya que los participantes de los Learning Days llegan con diferentes conocimientos previos de estadística y distintas preferencias en cuanto a los softwares estadísticos, nosotros usamos R para asegurarnos de que todos estén en la misma página. Abogamos por el uso de R de manera general por su flexibilidad, diversas aplicaciones y soporte integral, que se puede obtener principalmente a través de foros en línea.</p>
 <p>RStudio es un entorno de desarrollo integrado de código abierto y gratuito con una interfaz de usuario que hace que R sea mucho más fácil de usar. R Markdown, una herramienta de RStudio, permite presentar fácilmente código, resultados y texto en formato .pdf, .html o .doc.</p>
 </div>
-<div id="descarga-de-r-y-rstudio" class="section level2" number="12.2">
+<div id="descarga-de-r-y-rstudio" class="section level2">
 <h2><span class="header-section-number">12.2</span> Descarga de R y RStudio</h2>
-<div id="descargando-r" class="section level3" number="12.2.1">
+<div id="descargando-r" class="section level3">
 <h3><span class="header-section-number">12.2.1</span> Descargando R</h3>
 <p>R se puede descargar gratuitamente de CRAN en el link correspondiente a su sistema operativo:</p>
 <ul>
@@ -695,7 +642,7 @@ Una introducción de los Learning Days de EGAP</div></a>
 </ul></li>
 </ul>
 </div>
-<div id="descargando-rstudio" class="section level3" number="12.2.2">
+<div id="descargando-rstudio" class="section level3">
 <h3><span class="header-section-number">12.2.2</span> Descargando RStudio</h3>
 <p>RStudio se puede descargar gratuitamente de la página web de RStudio, <a href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a>. Haga clic en el botón azul <code>Download</code> que aparece en la parte superior de la columna izquierda de la tabla. Es decir, la columna “RStudio Desktop Open Source License” como se muestra a continuación en la Figura B.1. Una vez que seleccione este botón, la página mostrará una lista de opciones de descarga como se muestra en la Figura B.2.</p>
 <ul>
@@ -716,7 +663,7 @@ Figura 12.2: Seleccione el link de Windows 10/8/7 para Windows o el link Mac OS 
 </div>
 </div>
 </div>
-<div id="interfaz-de-rstudio" class="section level2" number="12.3">
+<div id="interfaz-de-rstudio" class="section level2">
 <h2><span class="header-section-number">12.3</span> Interfaz de RStudio</h2>
 <p>Usted verá tres paneles la primera vez que ejecute RStudio, como se muestra en la Figura B.3 a continuación.</p>
 <ul>
@@ -730,14 +677,12 @@ Figura 12.2: Seleccione el link de Windows 10/8/7 para Windows o el link Mac OS 
 Figura 12.3: Cuando se abre RStudio, hay tres paneles visibles: la Consola (panel izquierdo), Entorno e Historial (panel superior derecho) y Misceláneo (panel inferior derecho).
 </p>
 </div>
-<div id="consola" class="section level3" number="12.3.1">
+<div id="consola" class="section level3">
 <h3><span class="header-section-number">12.3.1</span> Consola</h3>
 <p>Puede ejecutar todas las operaciones directamente en la consola. Por ejemplo, si ingresa <code>4 + 4</code> y presiona la tecla Enter/Return, la consola devolverá <code>[1] 8</code>.</p>
 <p>Para asegurarnos que todos estén preparados para usar R en los Learning Days, les pedimos a los participantes que ejecuten una línea de código en particular en la consola para descargar varios paquetes de R. Los paquetes son fragmentos de código reproducible que permiten un análisis más eficiente en R. Para ejecutar estas líneas, copie el siguiente código en la Consola y presione la tecla “Enter”/“Intro”. Tenga en cuenta que se requiere conexión a internet para poder descargar paquetes.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="introducción-a-r-y-rstudio.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
-<span id="cb1-2"><a href="introducción-a-r-y-rstudio.html#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;AER&quot;</span>, <span class="st">&quot;arm&quot;</span>, <span class="st">&quot;MASS&quot;</span>, <span class="st">&quot;sandwich&quot;</span>,</span>
-<span id="cb1-3"><a href="introducción-a-r-y-rstudio.html#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;lmtest&quot;</span>, <span class="st">&quot;estimatr&quot;</span>, <span class="st">&quot;coin&quot;</span>, <span class="st">&quot;randomizr&quot;</span>, <span class="st">&quot;DeclareDesign&quot;</span></span>
-<span id="cb1-4"><a href="introducción-a-r-y-rstudio.html#cb1-4" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;AER&quot;</span>, <span class="st">&quot;arm&quot;</span>, <span class="st">&quot;MASS&quot;</span>, <span class="st">&quot;sandwich&quot;</span>, </a>
+<a class="sourceLine" id="cb1-2" title="2">                   <span class="st">&quot;lmtest&quot;</span>, <span class="st">&quot;estimatr&quot;</span>,<span class="st">&quot;coin&quot;</span>,<span class="st">&quot;randomizr&quot;</span>, <span class="st">&quot;DeclareDesign&quot;</span>))</a></code></pre></div>
 <p>Si los paquetes son descargados correctamente, su consola se deberá ver como la figura B.4, excepto que las URL variarán de acuerdo a su ubicación.</p>
 <div class="figure"><span id="fig:console2"></span>
 <img src="Images/console2a.png" alt="Un imagen de la Consola después de ejecutrar las tres lineas de códico indicadas arriba." width="40%" />
@@ -746,7 +691,7 @@ Figura 12.4: Un imagen de la Consola después de ejecutrar las tres lineas de c�
 </p>
 </div>
 </div>
-<div id="editor" class="section level3" number="12.3.2">
+<div id="editor" class="section level3">
 <h3><span class="header-section-number">12.3.2</span> Editor</h3>
 <p>Para escribir y guardar código reproducible se utiliza un cuarto panel, el Editor. Para abrir el Editor, haga clic en el icono con una página en blanco con un signo más en la esquina superior izquierda de la interfaz de RStudio y seleccione <code>R Script</code>, tal como se ve en la Figura B.5.</p>
 <div class="figure"><span id="fig:newscript"></span>
@@ -764,7 +709,7 @@ Figura 12.6: Una expresióna aritmética se escribe en el Editor y se evalua en 
 </div>
 <p>R se puede utilizar para cualquier operación aritmética, incluidas, entre otras, la suma (<code>+</code>), la resta (<code>-</code>), la multiplicación escalar (<code>*</code>), la división (<code>/</code>) y la exponenciación (<code>^</code> ).</p>
 </div>
-<div id="entorno-historial-y-otros" class="section level3" number="12.3.3">
+<div id="entorno-historial-y-otros" class="section level3">
 <h3><span class="header-section-number">12.3.3</span> Entorno, historial y otros</h3>
 <p>Más allá de las funciones básicas también podemos almacenar valores, datos y funciones en el entorno global. Para asignar un valor a una variable, use el operador <code>&lt;-</code>. Todos los valores, funciones y datos almacenados aparecerán en la pestaña Entorno del panel superior derecho. En la Figura B.7, definimos la variable <code>t</code> para tomar el valor <span class="math inline">\(3 \times \frac {6}{14}\)</span>. Como podemos ver <code>t</code> está almacenada en <em>Values</em>.</p>
 <p>También cargamos un conjunto de datos. Aquí, “ChickWeight” es un conjunto de datos integrado en R. La mayoría de los conjuntos de datos se cargarán desde la web u otros archivos en su computadora a través de un método alternativo. Podemos ver que ChickWeight contiene 578 observaciones de 4 variables y se almacena en el entorno. Al hacer clic en el nombre ChickWeight, ingresará una pestaña con el conjunto de datos en la ventana del Editor.</p>
@@ -775,7 +720,7 @@ Figura 12.7: El valor 3 * (6/14) es asignado a la variable t (en rojo) y el conj
 </p>
 </div>
 <p>Los talleres de los Learning Days utilizan muchas herramientas en R para analizar y explorar datos. Por ahora, podemos aprender algunas herramientas básicas para examinar los datos. La función <code>head()</code> nos permite ver las primeras seis filas del conjunto de datos. <code>summary()</code> resume cada una de las columnas del conjunto de datos y <code>dim()</code> proporciona las dimensiones del conjunto de datos, primero el número de filas y luego las columnas.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="introducción-a-r-y-rstudio.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ChickWeight) <span class="co"># Primeras 6 observaciones de los datos</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">head</span>(ChickWeight) <span class="co"># Primeras 6 observaciones de los datos</span></a></code></pre></div>
 <pre><code>  weight Time Chick Diet
 1     42    0     1    1
 2     51    2     1    1
@@ -783,7 +728,7 @@ Figura 12.7: El valor 3 * (6/14) es asignado a la variable t (en rojo) y el conj
 4     64    6     1    1
 5     76    8     1    1
 6     93   10     1    1</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="introducción-a-r-y-rstudio.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(ChickWeight) <span class="co"># Resumen de todas las variables</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">summary</span>(ChickWeight) <span class="co"># Resumen de todas las variables</span></a></code></pre></div>
 <pre><code>     weight         Time          Chick     Diet   
  Min.   : 35   Min.   : 0.0   13     : 12   1:220  
  1st Qu.: 63   1st Qu.: 4.0   9      : 12   2:120  
@@ -792,11 +737,11 @@ Figura 12.7: El valor 3 * (6/14) es asignado a la variable t (en rojo) y el conj
  3rd Qu.:164   3rd Qu.:16.0   17     : 12          
  Max.   :373   Max.   :21.0   19     : 12          
                               (Other):506          </code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="introducción-a-r-y-rstudio.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(ChickWeight) <span class="co"># Dimensiones de los datos; primero filas luego columnas</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">dim</span>(ChickWeight) <span class="co"># Dimensiones de los datos; primero filas luego columnas</span></a></code></pre></div>
 <pre><code>[1] 578   4</code></pre>
 <p>A diferencia de cualquier otro software estadístico, R permite a los usuarios almacenar múltiples conjuntos de datos de diferentes dimensiones simultáneamente. Esta característica hace que R sea bastante flexible para el análisis de datos utilizando distintos métodos.</p>
 </div>
-<div id="misceláneo" class="section level3" number="12.3.4">
+<div id="misceláneo" class="section level3">
 <h3><span class="header-section-number">12.3.4</span> Misceláneo</h3>
 <p>R proporciona un conjunto de herramientas, que van desde funciones integradas para graficar (<code>plot</code>) hasta paquetes externos para estimaciones, modelos, gráfico de datos, etc. El último panel, Misceláneo, permite la visualización rápida de gráficos en RStudio. La Figura B.8 muestra cómo se ve una gráfica en este panel. En los Learning Days se explicara más en detalle cómo graficar datos. Por ahora no se preocupe por el código para graficar que aparece en el Editor.</p>
 <div class="figure"><span id="fig:graph"></span>
@@ -807,9 +752,9 @@ Figura 12.8: Un ejemplo de una gráfica de datos hecha en R utilizando el conjun
 </div>
 </div>
 </div>
-<div id="aprendiendo-a-usar-r" class="section level2" number="12.4">
+<div id="aprendiendo-a-usar-r" class="section level2">
 <h2><span class="header-section-number">12.4</span> Aprendiendo a usar R</h2>
-<div id="recursos-en-línea" class="section level3" number="12.4.1">
+<div id="recursos-en-línea" class="section level3">
 <h3><span class="header-section-number">12.4.1</span> Recursos en línea</h3>
 <p>Hay muchos recursos útiles en línea que lo ayudarán a familiarizarse con R. Nosotros recomendamos dos fuentes:</p>
 <ul>
@@ -823,85 +768,85 @@ Figura 12.8: Un ejemplo de una gráfica de datos hecha en R utilizando el conjun
 </ol></li>
 </ul>
 </div>
-<div id="práctica-básica" class="section level3" number="12.4.2">
+<div id="práctica-básica" class="section level3">
 <h3><span class="header-section-number">12.4.2</span> Práctica básica</h3>
 <p>Aquí proporcionamos algunos fragmentos de código para que se familiarice con algunas prácticas básicas en R. Le recomendamos que practique escribiendo los fragmentos de código en su Editor y luego revisando los resultados.</p>
-<div id="configuración-de-una-sesión-r" class="section level4" number="12.4.2.1">
+<div id="configuración-de-una-sesión-r" class="section level4">
 <h4><span class="header-section-number">12.4.2.1</span> Configuración de una sesión R</h4>
 <p>En general, leemos otros archivos tales como datos o funciones en R y generamos resultados en forma de gráficos o tablas guardados en archivos que no están contenidos en una sesión de R. Para hacer esto, debemos darle a R una “dirección” en la que guardar dichos archivos. Puede ser más eficiente hacer esto configurando un directorio de trabajo, esto es, una ruta de archivo en la que se almacenan los archivos relevantes. Podemos identificar el directorio de trabajo actual usando <code>getwd()</code> y establecer uno nuevo usando <code>setwd()</code>. Tenga en cuenta que la sintaxis de estas rutas de archivo varía según el sistema operativo.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="introducción-a-r-y-rstudio.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="introducción-a-r-y-rstudio.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">&quot;~TaraLyn/EGAP Learning Days Admin/Workshop 2018_2 (Uruguay)/&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">getwd</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">setwd</span>(<span class="st">&quot;~TaraLyn/EGAP Learning Days Admin/Workshop 2018_2 (Uruguay)/&quot;</span>)   </a></code></pre></div>
 <p>Es posible que usted necesite instalar paquetes adicionales a los enumerados anteriormente para ejecutar ciertas funciones. Para instalar paquetes se utiliza la función <code>install.packages(" ")</code>, escribiendo el nombre del paquete entre comillas. Solo hace falta instalar los paquetes una vez.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="introducción-a-r-y-rstudio.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;randomizr&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;randomizr&quot;</span>)  </a></code></pre></div>
 <p>Una vez que se instala un paquete se puede cargar y acceder a él usando <code>library()</code> donde el nombre del paquete se inserta entre paréntesis (sin comillas "").</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="introducción-a-r-y-rstudio.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(randomizr)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">library</span>(randomizr)</a></code></pre></div>
 <p>Para borrar la memoria de R de los datos, funciones o valores almacenados que aparecen en la pestaña del entorno (Environment), use <code>rm(list = ls())</code>. Puede ser útil establecer una semilla de un número aleatorio para garantizar que sea posible replicar nuestro código en una sesión de R diferente. Esto es especialmente importante cuando trabajamos con métodos basados en simulación.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introducción-a-r-y-rstudio.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>())</span>
-<span id="cb12-2"><a href="introducción-a-r-y-rstudio.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2018</span>) <span class="co"># Opcional: definir semilla para resultados replicables</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())                                   </a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="kw">set.seed</span>(<span class="dv">2018</span>)  <span class="co"># Opcional: definir semilla para resultados replicables</span></a></code></pre></div>
 </div>
-<div id="comandos-básicos-de-r" class="section level4" number="12.4.2.2">
+<div id="comandos-básicos-de-r" class="section level4">
 <h4><span class="header-section-number">12.4.2.2</span> Comandos básicos de R</h4>
 <p>A continuación, exploraremos algunos de los comandos básicos de R. Por ejemplo, para asignar un escalar (un elemento simple) a una variable, usamos el comando <code>&lt;-</code> como mencionamos anteriormente:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="introducción-a-r-y-rstudio.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;&lt;-&quot;  es el comando para asignar; Se utiliza para definir variables.</span></span>
-<span id="cb13-2"><a href="introducción-a-r-y-rstudio.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Por ejemplo:</span></span>
-<span id="cb13-3"><a href="introducción-a-r-y-rstudio.html#cb13-3" aria-hidden="true" tabindex="-1"></a>(a <span class="ot">&lt;-</span> <span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" title="1"><span class="co"># &quot;&lt;-&quot;  es el comando para asignar; Se utiliza para definir variables.</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="co"># Por ejemplo:</span></a>
+<a class="sourceLine" id="cb13-3" title="3">(a &lt;-<span class="st"> </span><span class="dv">5</span>)     </a></code></pre></div>
 <pre><code>[1] 5</code></pre>
 <p>También es posible que queramos asignar un vector de elementos a una variable. Aquí usamos el mismo comando <code>&lt;-</code>, pero nos enfocamos en cómo crear el vector.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="introducción-a-r-y-rstudio.html#cb15-1" aria-hidden="true" tabindex="-1"></a>(b <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) <span class="co"># &quot;:&quot;  se utiliza para crear una cadena de números enteros</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">(b &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span>)              <span class="co"># &quot;:&quot;  se utiliza para crear una cadena de números enteros</span></a></code></pre></div>
 <pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="introducción-a-r-y-rstudio.html#cb17-1" aria-hidden="true" tabindex="-1"></a>(v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">4</span>, pi)) <span class="co">#  c() se utiliza para crear un vector</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1">(v &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">4</span>, pi))   <span class="co">#  c() se utiliza para crear un vector </span></a></code></pre></div>
 <pre><code>[1] 1.000 3.000 2.000 4.000 3.142</code></pre>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="introducción-a-r-y-rstudio.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#   cuyos elementos pueden ser de cualquier tipo</span></span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" title="1">                           <span class="co">#   cuyos elementos pueden ser de cualquier tipo</span></a></code></pre></div>
 <p>Podemos referirnos a los elementos de un vector indicando su posición en el vector entre corchetes <code>[]</code>.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="introducción-a-r-y-rstudio.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Consultar los elementos de un vector:</span></span>
-<span id="cb20-2"><a href="introducción-a-r-y-rstudio.html#cb20-2" aria-hidden="true" tabindex="-1"></a>b[<span class="dv">1</span>] <span class="co"># Devuelve la 1ra posición del vector</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" title="1"><span class="co"># Consultar los elementos de un vector:</span></a>
+<a class="sourceLine" id="cb20-2" title="2">b[<span class="dv">1</span>]                   <span class="co"># Devuelve la 1ra posición del vector</span></a></code></pre></div>
 <pre><code>[1] 1</code></pre>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="introducción-a-r-y-rstudio.html#cb22-1" aria-hidden="true" tabindex="-1"></a>b[<span class="dv">5</span><span class="sc">:</span><span class="dv">4</span>] <span class="co"># Devuelve las posiciones 5 y 4; en ese orden</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" title="1">b[<span class="dv">5</span><span class="op">:</span><span class="dv">4</span>]                 <span class="co"># Devuelve las posiciones 5 y 4; en ese orden</span></a></code></pre></div>
 <pre><code>[1] 5 4</code></pre>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="introducción-a-r-y-rstudio.html#cb24-1" aria-hidden="true" tabindex="-1"></a>b[<span class="sc">-</span><span class="dv">1</span>] <span class="co"># Devuelve todas las posiciones menos la primera</span></span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" title="1">b[<span class="op">-</span><span class="dv">1</span>]                  <span class="co"># Devuelve todas las posiciones menos la primera</span></a></code></pre></div>
 <pre><code>[1]  2  3  4  5  6  7  8  9 10</code></pre>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="introducción-a-r-y-rstudio.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Devuelve todas las posiciones para las cuales se indica &quot;TRUE&quot;</span></span>
-<span id="cb26-2"><a href="introducción-a-r-y-rstudio.html#cb26-2" aria-hidden="true" tabindex="-1"></a>b[<span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" title="1"><span class="co"># Devuelve todas las posiciones para las cuales se indica &quot;TRUE&quot;</span></a>
+<a class="sourceLine" id="cb26-2" title="2">b[<span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>)]  </a></code></pre></div>
 <pre><code>[1] 1 3 6 7</code></pre>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="introducción-a-r-y-rstudio.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Para asignar valores a posiciones específicas en un vector</span></span>
-<span id="cb28-2"><a href="introducción-a-r-y-rstudio.html#cb28-2" aria-hidden="true" tabindex="-1"></a>b[<span class="dv">5</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1"><span class="co"># Para asignar valores a posiciones específicas en un vector</span></a>
+<a class="sourceLine" id="cb28-2" title="2">b[<span class="dv">5</span>] &lt;-<span class="st"> </span><span class="dv">0</span></a></code></pre></div>
 <p>Hay un conjunto de funciones integradas que se pueden aplicar a vectores como <code>b</code>.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="introducción-a-r-y-rstudio.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(b) <span class="co"># Suma de todos los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">sum</span>(b)      <span class="co"># Suma de todos los elementos</span></a></code></pre></div>
 <pre><code>[1] 50</code></pre>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="introducción-a-r-y-rstudio.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(b) <span class="co"># Promedio de todos los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">mean</span>(b)     <span class="co"># Promedio de todos los elementos</span></a></code></pre></div>
 <pre><code>[1] 5</code></pre>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="introducción-a-r-y-rstudio.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(b) <span class="co"># Máximo de todos los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">max</span>(b)      <span class="co"># Máximo de todos los elementos</span></a></code></pre></div>
 <pre><code>[1] 10</code></pre>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="introducción-a-r-y-rstudio.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(b) <span class="co"># Mínimo de todos los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">min</span>(b)      <span class="co"># Mínimo de todos los elementos</span></a></code></pre></div>
 <pre><code>[1] 0</code></pre>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="introducción-a-r-y-rstudio.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(b) <span class="co"># Desviación estándar de todos los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">sd</span>(b)       <span class="co"># Desviación estándar de todos los elementos</span></a></code></pre></div>
 <pre><code>[1] 3.496</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="introducción-a-r-y-rstudio.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(b) <span class="co"># Varianza de todos los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">var</span>(b)      <span class="co"># Varianza de todos los elementos</span></a></code></pre></div>
 <pre><code>[1] 12.22</code></pre>
 <p>También podemos aplicar transformaciones aritméticas a los elementos de un vector:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="introducción-a-r-y-rstudio.html#cb41-1" aria-hidden="true" tabindex="-1"></a>b<span class="sc">^</span><span class="dv">2</span> <span class="co"># Eleva c/u de los elementos al cuadrado</span></span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1">b<span class="op">^</span><span class="dv">2</span>               <span class="co"># Eleva c/u de los elementos al cuadrado</span></a></code></pre></div>
 <pre><code> [1]   1   4   9  16   0  36  49  64  81 100</code></pre>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="introducción-a-r-y-rstudio.html#cb43-1" aria-hidden="true" tabindex="-1"></a>b<span class="sc">^</span>.<span class="dv">5</span> <span class="co"># Calcula la raíz cuadrada de los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" title="1">b<span class="op">^</span>.<span class="dv">5</span>              <span class="co"># Calcula la raíz cuadrada de los elementos</span></a></code></pre></div>
 <pre><code> [1] 1.000 1.414 1.732 2.000 0.000 2.449 2.646 2.828 3.000 3.162</code></pre>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="introducción-a-r-y-rstudio.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span>(b) <span class="co"># Calcula el logaritmo de los elementos</span></span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb45-1" title="1"><span class="kw">log</span>(b)            <span class="co"># Calcula el logaritmo de los elementos</span></a></code></pre></div>
 <pre><code> [1] 0.0000 0.6931 1.0986 1.3863   -Inf 1.7918 1.9459 2.0794 2.1972 2.3026</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="introducción-a-r-y-rstudio.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">exp</span>(b)[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>] <span class="co"># e elevado a la b. sólo mostramos las posiciones 1 a 6,</span></span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb47-1" title="1"><span class="kw">exp</span>(b)[<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>]       <span class="co"># e elevado a la b. sólo mostramos las posiciones 1 a 6,   </span></a></code></pre></div>
 <pre><code>[1]   2.718   7.389  20.086  54.598   1.000 403.429</code></pre>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="introducción-a-r-y-rstudio.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># por razones de diagramación pero la operación se  aplica a todo el vector b</span></span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb49-1" title="1"><span class="co"># por razones de diagramación pero la operación se  aplica a todo el vector b</span></a></code></pre></div>
 <p>Finalmente, podemos evaluar condiciones lógicas (es decir, ``¿es verdadera la condición X?’’) En todos los elementos de un vector:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="introducción-a-r-y-rstudio.html#cb50-1" aria-hidden="true" tabindex="-1"></a>b <span class="sc">==</span> <span class="dv">2</span> <span class="co"># Es igual a ?</span></span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb50-1" title="1">b <span class="op">==</span><span class="st"> </span><span class="dv">2</span>                     <span class="co"># Es igual a ?</span></a></code></pre></div>
 <pre><code> [1] FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="introducción-a-r-y-rstudio.html#cb52-1" aria-hidden="true" tabindex="-1"></a>b <span class="sc">&lt;</span> <span class="dv">5</span> <span class="co"># Es menor que</span></span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb52-1" title="1">b <span class="op">&lt;</span><span class="st"> </span><span class="dv">5</span>                      <span class="co"># Es menor que</span></a></code></pre></div>
 <pre><code> [1]  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="introducción-a-r-y-rstudio.html#cb54-1" aria-hidden="true" tabindex="-1"></a>b <span class="sc">&gt;=</span> <span class="dv">5</span> <span class="co"># Es mayor o igual que</span></span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb54-1" title="1">b <span class="op">&gt;=</span><span class="st"> </span><span class="dv">5</span>                     <span class="co"># Es mayor o igual que</span></a></code></pre></div>
 <pre><code> [1] FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE</code></pre>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="introducción-a-r-y-rstudio.html#cb56-1" aria-hidden="true" tabindex="-1"></a>b <span class="sc">&lt;=</span> <span class="dv">5</span> <span class="sc">|</span> b <span class="sc">/</span> <span class="dv">4</span> <span class="sc">==</span> <span class="dv">2</span> <span class="co"># | signfica &quot;o&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb56-1" title="1">b <span class="op">&lt;=</span><span class="st"> </span><span class="dv">5</span> <span class="op">|</span><span class="st"> </span>b <span class="op">/</span><span class="st"> </span><span class="dv">4</span> <span class="op">==</span><span class="st"> </span><span class="dv">2</span>        <span class="co"># | signfica &quot;o&quot;</span></a></code></pre></div>
 <pre><code> [1]  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="introducción-a-r-y-rstudio.html#cb58-1" aria-hidden="true" tabindex="-1"></a>b <span class="sc">&gt;</span> <span class="dv">2</span> <span class="sc">&amp;</span> b <span class="sc">&lt;</span> <span class="dv">9</span> <span class="co"># &amp; significa &quot;y&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb58-1" title="1">b<span class="op">&gt;</span><span class="dv">2</span> <span class="op">&amp;</span><span class="st"> </span>b<span class="op">&lt;</span><span class="dv">9</span>                  <span class="co"># &amp; significa &quot;y&quot;</span></a></code></pre></div>
 <pre><code> [1] FALSE FALSE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="introducción-a-r-y-rstudio.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(b) <span class="co"># hay valores faltantes en b?</span></span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb60-1" title="1"><span class="kw">is.na</span>(b)                   <span class="co"># hay valores faltantes en b?</span></a></code></pre></div>
 <pre><code> [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="introducción-a-r-y-rstudio.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span>(b <span class="sc">&lt;</span> <span class="dv">5</span>) <span class="co"># posiciones paras las cuales una condición se cumple</span></span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb62-1" title="1"><span class="kw">which</span>(b<span class="op">&lt;</span><span class="dv">5</span>)       <span class="co"># posiciones paras las cuales una condición se cumple</span></a></code></pre></div>
 <pre><code>[1] 1 2 3 4 5</code></pre>
 <p>La lógica básica de estos comandos se aplica a estructuras de datos mucho más complejas que escalares y vectores. Comprender bien estas funciones básicas le ayudará a entender temas más avanzados durante los Learning Days.</p>
 
@@ -938,7 +883,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -947,7 +891,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/egap/theory_and_practice_of_field_experiments/edit/main/Book/intro_to_r.Rmd",
+"link": "https://github.com/egap/theory_and_practice_of_field_experiments_spanish/edit/main/Book/intro_to_r.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -958,7 +902,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["theory_and_practice_of_field_experiments.pdf", "theory_and_practice_of_field_experiments.epub"],
+"download": ["theory_and_practice_of_field_experiments_spanish.pdf", "theory_and_practice_of_field_experiments_spanish.epub"],
 "toc": {
 "collapse": "section",
 "sharing": {

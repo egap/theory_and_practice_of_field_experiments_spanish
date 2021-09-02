@@ -4,19 +4,19 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Módulo 2 El Proceso del diseño de investigación | theory_and_practice_of_field_experiments.knit</title>
+  <title>Módulo 2 El Proceso del diseño de investigación | theory_and_practice_of_field_experiments_spanish.utf8</title>
   <meta name="description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Módulo 2 El Proceso del diseño de investigación | theory_and_practice_of_field_experiments.knit" />
+  <meta property="og:title" content="Módulo 2 El Proceso del diseño de investigación | theory_and_practice_of_field_experiments_spanish.utf8" />
   <meta property="og:type" content="book" />
   
   
   <meta property="og:description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
-  <meta name="github-repo" content="egap/theory_and_practice_of_field_experiments" />
+  <meta name="github-repo" content="egap/theory_and_practice_of_field_experiments_spanish" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Módulo 2 El Proceso del diseño de investigación | theory_and_practice_of_field_experiments.knit" />
+  <meta name="twitter:title" content="Módulo 2 El Proceso del diseño de investigación | theory_and_practice_of_field_experiments_spanish.utf8" />
   
   <meta name="twitter:description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
   
@@ -32,7 +32,6 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="inferencia-causal.html"/>
-<script src="book_assets/header-attrs/header-attrs.js"></script>
 <script src="book_assets/jquery/jquery.min.js"></script>
 <link href="book_assets/gitbook/css/style.css" rel="stylesheet" />
 <link href="book_assets/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -50,8 +49,6 @@
 
 
 
-<link href="book_assets/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="book_assets/anchor-sections/anchor-sections.js"></script>
 
         <script>
 /* ========================================================================
@@ -399,7 +396,6 @@ $(document).ready(function () {
   window.initializeCodeFolding("show" === "show");
 });
 </script>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QN1VN8C67"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-0QN1VN8C67'); </script>
 <script type="application/json" class="js-hypothesis-config">
 
@@ -411,27 +407,25 @@ $(document).ready(function () {
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -440,9 +434,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -475,29 +469,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -514,137 +485,113 @@ div.csl-indent {
 <li><a href="./"><img src="Images/egap-logo.png" alt="EGAP Logo" width=100>EGAP Learning Days</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
-<ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cómo-usar-este-libro"><i class="fa fa-check"></i><b>1.1</b> Cómo usar este libro</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#nos-encantaría-saber-lo-que-piensa"><i class="fa fa-check"></i><b>1.2</b> ¡Nos encantaría saber lo que piensa!</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i><b>1.3</b> Agradecimientos</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html"><i class="fa fa-check"></i><b>2</b> El Proceso del diseño de investigación</a>
-<ul>
+<li class="chapter" data-level="2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html"><i class="fa fa-check"></i><b>2</b> El Proceso del diseño de investigación</a><ul>
 <li class="chapter" data-level="2.1" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#contenido-principal"><i class="fa fa-check"></i><b>2.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="2.2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#diapositivas"><i class="fa fa-check"></i><b>2.2</b> Diapositivas</a></li>
 <li class="chapter" data-level="2.3" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#formulario-de-diseño-y-pre-registro"><i class="fa fa-check"></i><b>2.3</b> Formulario de diseño y pre-registro</a></li>
-<li class="chapter" data-level="2.4" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#recursos"><i class="fa fa-check"></i><b>2.4</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="2.4" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#recursos"><i class="fa fa-check"></i><b>2.4</b> Recursos</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#guía-de-métodos-de-egap"><i class="fa fa-check"></i><b>2.4.1</b> Guía de métodos de EGAP</a></li>
 <li class="chapter" data-level="2.4.2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#libros-capítulos-y-artículos"><i class="fa fa-check"></i><b>2.4.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="2.4.3" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#herramientas"><i class="fa fa-check"></i><b>2.4.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="inferencia-causal.html"><a href="inferencia-causal.html"><i class="fa fa-check"></i><b>3</b> Inferencia causal</a>
-<ul>
+<li class="chapter" data-level="3" data-path="inferencia-causal.html"><a href="inferencia-causal.html"><i class="fa fa-check"></i><b>3</b> Inferencia causal</a><ul>
 <li class="chapter" data-level="3.1" data-path="inferencia-causal.html"><a href="inferencia-causal.html#contenido-principal-1"><i class="fa fa-check"></i><b>3.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="3.2" data-path="inferencia-causal.html"><a href="inferencia-causal.html#diapositivas-1"><i class="fa fa-check"></i><b>3.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#recursos-1"><i class="fa fa-check"></i><b>3.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#recursos-1"><i class="fa fa-check"></i><b>3.3</b> Recursos</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="inferencia-causal.html"><a href="inferencia-causal.html#guías-de-métodos-de-egap"><i class="fa fa-check"></i><b>3.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="3.3.2" data-path="inferencia-causal.html"><a href="inferencia-causal.html#causalinference-cites"><i class="fa fa-check"></i><b>3.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="3.3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#informes-de-egap-sobre-políticas-públicas"><i class="fa fa-check"></i><b>3.3.3</b> Informes de EGAP sobre políticas públicas:</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="aleatorización.html"><a href="aleatorización.html"><i class="fa fa-check"></i><b>4</b> Aleatorización</a>
-<ul>
+<li class="chapter" data-level="4" data-path="aleatorización.html"><a href="aleatorización.html"><i class="fa fa-check"></i><b>4</b> Aleatorización</a><ul>
 <li class="chapter" data-level="4.1" data-path="aleatorización.html"><a href="aleatorización.html#contenido-principal-2"><i class="fa fa-check"></i><b>4.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="4.2" data-path="aleatorización.html"><a href="aleatorización.html#diapositivas-2"><i class="fa fa-check"></i><b>4.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="4.3" data-path="aleatorización.html"><a href="aleatorización.html#recursos-2"><i class="fa fa-check"></i><b>4.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="4.3" data-path="aleatorización.html"><a href="aleatorización.html#recursos-2"><i class="fa fa-check"></i><b>4.3</b> Recursos</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="aleatorización.html"><a href="aleatorización.html#guías-de-métodos-de-egap-1"><i class="fa fa-check"></i><b>4.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="4.3.2" data-path="aleatorización.html"><a href="aleatorización.html#libros-capítulos-y-artículos-1"><i class="fa fa-check"></i><b>4.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="4.3.3" data-path="aleatorización.html"><a href="aleatorización.html#informes-de-egap-sobre-políticas-públicas-1"><i class="fa fa-check"></i><b>4.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 <li class="chapter" data-level="4.3.4" data-path="aleatorización.html"><a href="aleatorización.html#herramientas-1"><i class="fa fa-check"></i><b>4.3.4</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de hipótesis</a>
-<ul>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de hipótesis</a><ul>
 <li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#contenido-principal-3"><i class="fa fa-check"></i><b>5.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#diapositivas-3"><i class="fa fa-check"></i><b>5.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#recursos-3"><i class="fa fa-check"></i><b>5.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#recursos-3"><i class="fa fa-check"></i><b>5.3</b> Recursos</a><ul>
 <li class="chapter" data-level="5.3.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#guías-de-métodos-de-egap-2"><i class="fa fa-check"></i><b>5.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="5.3.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#libros-capítulos-y-artículos-2"><i class="fa fa-check"></i><b>5.3.2</b> Libros, capítulos y artículos</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html"><i class="fa fa-check"></i><b>6</b> Estimandos y estimadores</a>
-<ul>
+<li class="chapter" data-level="6" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html"><i class="fa fa-check"></i><b>6</b> Estimandos y estimadores</a><ul>
 <li class="chapter" data-level="6.1" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#contenido-principal-4"><i class="fa fa-check"></i><b>6.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="6.2" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#diapositivas-4"><i class="fa fa-check"></i><b>6.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="6.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#recursos-4"><i class="fa fa-check"></i><b>6.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="6.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#recursos-4"><i class="fa fa-check"></i><b>6.3</b> Recursos</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#guías-de-métodos-de-egap-3"><i class="fa fa-check"></i><b>6.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="6.3.2" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#libros-capítulos-y-artículos-3"><i class="fa fa-check"></i><b>6.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="6.3.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#herramientas-2"><i class="fa fa-check"></i><b>6.3.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html"><i class="fa fa-check"></i><b>7</b> Poder estadístico y diagnosticandos del diseño</a>
-<ul>
+<li class="chapter" data-level="7" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html"><i class="fa fa-check"></i><b>7</b> Poder estadístico y diagnosticandos del diseño</a><ul>
 <li class="chapter" data-level="7.1" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#contenido-principal-5"><i class="fa fa-check"></i><b>7.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="7.2" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#diapositivas-5"><i class="fa fa-check"></i><b>7.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="7.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#recursos-5"><i class="fa fa-check"></i><b>7.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="7.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#recursos-5"><i class="fa fa-check"></i><b>7.3</b> Recursos</a><ul>
 <li class="chapter" data-level="7.3.1" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#guías-de-métodos-de-egap-4"><i class="fa fa-check"></i><b>7.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="7.3.2" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#informes-de-egap-sobre-políticas-públicas-y-paps"><i class="fa fa-check"></i><b>7.3.2</b> Informes de EGAP sobre políticas públicas y PAPs</a></li>
 <li class="chapter" data-level="7.3.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#herramientas-3"><i class="fa fa-check"></i><b>7.3.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="medición.html"><a href="medición.html"><i class="fa fa-check"></i><b>8</b> Medición</a>
-<ul>
+<li class="chapter" data-level="8" data-path="medición.html"><a href="medición.html"><i class="fa fa-check"></i><b>8</b> Medición</a><ul>
 <li class="chapter" data-level="8.1" data-path="medición.html"><a href="medición.html#contenido-principal-6"><i class="fa fa-check"></i><b>8.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="8.2" data-path="medición.html"><a href="medición.html#diapositivas-6"><i class="fa fa-check"></i><b>8.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="8.3" data-path="medición.html"><a href="medición.html#recursos-6"><i class="fa fa-check"></i><b>8.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="8.3" data-path="medición.html"><a href="medición.html#recursos-6"><i class="fa fa-check"></i><b>8.3</b> Recursos</a><ul>
 <li class="chapter" data-level="8.3.1" data-path="medición.html"><a href="medición.html#guías-de-métodos-de-egap-5"><i class="fa fa-check"></i><b>8.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="8.3.2" data-path="medición.html"><a href="medición.html#libros-capítulos-y-artículos-4"><i class="fa fa-check"></i><b>8.3.2</b> Libros, Capítulos y Artículos</a></li>
 <li class="chapter" data-level="8.3.3" data-path="medición.html"><a href="medición.html#informes-de-egap-sobre-políticas-públicas-2"><i class="fa fa-check"></i><b>8.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><i class="fa fa-check"></i><b>9</b> Amenazas a la validez interna de los experimentos aleatorios</a>
-<ul>
+<li class="chapter" data-level="9" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><i class="fa fa-check"></i><b>9</b> Amenazas a la validez interna de los experimentos aleatorios</a><ul>
 <li class="chapter" data-level="9.1" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#contenido-principal-7"><i class="fa fa-check"></i><b>9.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="9.2" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#diapositivas-7"><i class="fa fa-check"></i><b>9.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="9.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#recursos-7"><i class="fa fa-check"></i><b>9.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="9.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#recursos-7"><i class="fa fa-check"></i><b>9.3</b> Recursos</a><ul>
 <li class="chapter" data-level="9.3.1" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#guías-de-métodos-de-egap-6"><i class="fa fa-check"></i><b>9.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="9.3.2" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#libros-capítulos-y-artículos-5"><i class="fa fa-check"></i><b>9.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="9.3.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#informes-de-egap-sobre-políticas-públicas-3"><i class="fa fa-check"></i><b>9.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>10</b> Consideraciones éticas</a>
-<ul>
+<li class="chapter" data-level="10" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>10</b> Consideraciones éticas</a><ul>
 <li class="chapter" data-level="10.1" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#contenido-principal-8"><i class="fa fa-check"></i><b>10.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="10.2" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#diapositivas-8"><i class="fa fa-check"></i><b>10.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="10.3" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#recursos-8"><i class="fa fa-check"></i><b>10.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="10.3" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#recursos-8"><i class="fa fa-check"></i><b>10.3</b> Recursos</a><ul>
 <li class="chapter" data-level="10.3.1" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#libros-capítulos-y-artículos-6"><i class="fa fa-check"></i><b>10.3.1</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="10.3.2" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#artículos-ciéntificos-y-paps"><i class="fa fa-check"></i><b>10.3.2</b> Artículos ciéntificos y PAPs</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="apéndice.html"><a href="apéndice.html"><i class="fa fa-check"></i>Apéndice</a></li>
-<li class="chapter" data-level="11" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html"><i class="fa fa-check"></i><b>11</b> Glosario de términos</a>
-<ul>
+<li class="chapter" data-level="11" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html"><i class="fa fa-check"></i><b>11</b> Glosario de términos</a><ul>
 <li class="chapter" data-level="11.1" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#conceptos-claves"><i class="fa fa-check"></i><b>11.1</b> Conceptos claves</a></li>
 <li class="chapter" data-level="11.2" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#inferencia-estadística"><i class="fa fa-check"></i><b>11.2</b> Inferencia estadística</a></li>
 <li class="chapter" data-level="11.3" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#estrategias-de-aleatorización"><i class="fa fa-check"></i><b>11.3</b> Estrategias de aleatorización</a></li>
 <li class="chapter" data-level="11.4" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#diseños-factoriales"><i class="fa fa-check"></i><b>11.4</b> Diseños factoriales</a></li>
 <li class="chapter" data-level="11.5" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#amenazas"><i class="fa fa-check"></i><b>11.5</b> Amenazas</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>12</b> Introducción a R y RStudio</a>
-<ul>
+<li class="chapter" data-level="12" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>12</b> Introducción a R y RStudio</a><ul>
 <li class="chapter" data-level="12.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#r-y-rstudio"><i class="fa fa-check"></i><b>12.1</b> R y RStudio</a></li>
-<li class="chapter" data-level="12.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descarga-de-r-y-rstudio"><i class="fa fa-check"></i><b>12.2</b> Descarga de R y RStudio</a>
-<ul>
+<li class="chapter" data-level="12.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descarga-de-r-y-rstudio"><i class="fa fa-check"></i><b>12.2</b> Descarga de R y RStudio</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descargando-r"><i class="fa fa-check"></i><b>12.2.1</b> Descargando R</a></li>
 <li class="chapter" data-level="12.2.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descargando-rstudio"><i class="fa fa-check"></i><b>12.2.2</b> Descargando RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="12.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#interfaz-de-rstudio"><i class="fa fa-check"></i><b>12.3</b> Interfaz de RStudio</a>
-<ul>
+<li class="chapter" data-level="12.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#interfaz-de-rstudio"><i class="fa fa-check"></i><b>12.3</b> Interfaz de RStudio</a><ul>
 <li class="chapter" data-level="12.3.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#consola"><i class="fa fa-check"></i><b>12.3.1</b> Consola</a></li>
 <li class="chapter" data-level="12.3.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#editor"><i class="fa fa-check"></i><b>12.3.2</b> Editor</a></li>
 <li class="chapter" data-level="12.3.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#entorno-historial-y-otros"><i class="fa fa-check"></i><b>12.3.3</b> Entorno, historial y otros</a></li>
 <li class="chapter" data-level="12.3.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#misceláneo"><i class="fa fa-check"></i><b>12.3.4</b> Misceláneo</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#aprendiendo-a-usar-r"><i class="fa fa-check"></i><b>12.4</b> Aprendiendo a usar R</a>
-<ul>
+<li class="chapter" data-level="12.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#aprendiendo-a-usar-r"><i class="fa fa-check"></i><b>12.4</b> Aprendiendo a usar R</a><ul>
 <li class="chapter" data-level="12.4.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#recursos-en-línea"><i class="fa fa-check"></i><b>12.4.1</b> Recursos en línea</a></li>
 <li class="chapter" data-level="12.4.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#práctica-básica"><i class="fa fa-check"></i><b>12.4.2</b> Práctica básica</a></li>
 </ul></li>
@@ -671,11 +618,11 @@ Una introducción de los Learning Days de EGAP</div></a>
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="el-proceso-del-diseño-de-investigación" class="section level1" number="2">
+<div id="el-proceso-del-diseño-de-investigación" class="section level1">
 <h1><span class="header-section-number">Módulo 2</span> El Proceso del diseño de investigación</h1>
 <p>Este libro tiene como propósito ayudarle a comprender y a diseñar experimentos aleatorios de campo. Pero antes de sumergirnos en los detalles del diseño de una investigación, lo primero que necesitamos es una pregunta de investigación bien formulada, una pregunta que nos permita generar conocimiento o nos ayude a tomar decisiones relacionadas con políticas públicas. O ambas cosas. Para esto no hay una receta simple, pero nuestras teorías sobre cómo funciona el mundo son importantes para poder articular bien las preguntas que serán la base de una investigación de alto impacto. Lo que sigue después de formular nuestra pregunta es desarrollar el mejor diseño experimental posible de acuerdo a nuestros recursos, utilizando el conocimiento de inferencia causal y estadística proveniente de los módulos que vienen a continuación.</p>
 <p>Este módulo presenta el <a href="https://egap.github.io/learningdays-resources/Exercises/design-form.Rmd">formulario para el diseño de investigación de EGAP</a>, una lista de verificación que le servirá de guia a través de las muchas etapas del proceso de investigación. Los talleres de los Learning Days se organizan en torno a este formulario. También le recomendamos el uso del paquete de software <a href="http://declaredesign.org">DeclareDesign</a> para explorar las implicaciones que podrían tener las diferentes elecciones que se pueden tomar con respecto al diseño de la investigación. Finalmente, este módulo discute los planes de pre-análisis y pre-registro. Cuando planificamos nuestros análisis y hacemos públicos estos planes, hacemos que sea más fácil persuadir a otros con nuestros resultados.</p>
-<div id="contenido-principal" class="section level2" number="2.1">
+<div id="contenido-principal" class="section level2">
 <h2><span class="header-section-number">2.1</span> Contenido principal</h2>
 <ul>
 <li><p>Una <strong>pregunta de investigación bien formulada</strong> facilita el avance de la ciencia y/o puede informar decisiones relacionadas con políticas públicas.</p></li>
@@ -688,13 +635,13 @@ Una introducción de los Learning Days de EGAP</div></a>
 <li><p><strong>Pre-registro:</strong> qué es, por qué y cómo deberíamos hacerlo.</p></li>
 </ul>
 </div>
-<div id="diapositivas" class="section level2" number="2.2">
+<div id="diapositivas" class="section level2">
 <h2><span class="header-section-number">2.2</span> Diapositivas</h2>
 <p>A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre diseño de investigación. Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.</p>
 <ul>
-<li><p><a href="https://egap.github.io/learningdays-resources/Slides/researchdesignform-slides.Rmd">Archivos de R Markdown</a></p></li>
-<li><p><a href="https://egap.github.io/learningdays-resources/Slides/researchdesignform-slides.pdf">Versión en PDF</a></p></li>
-<li><p><a href="https://egap.github.io/learningdays-resources/Slides/researchdesignform-slides.html">Versión de HTML</a></p></li>
+<li><p><a href="https://egap.github.io/learningdays-resources/Slides_esp/researchdesignform-slides.Rmd">Archivos de R Markdown</a></p></li>
+<li><p><a href="https://egap.github.io/learningdays-resources/Slides_esp/researchdesignform-slides.pdf">Versión en PDF</a></p></li>
+<li><p><a href="https://egap.github.io/learningdays-resources/Slides_esp/researchdesignform-slides.html">Versión de HTML</a></p></li>
 </ul>
 <p>Si desea, también puede ver las diapositivas utilizadas en sesiones previas de los Learning Days de EGAP:</p>
 <ul>
@@ -714,10 +661,10 @@ Una introducción de los Learning Days de EGAP</div></a>
 <li><p><a href="https://egap.github.io/learningdays-resources/Slides/Examples/research_design-guatemala.pdf">Charla de Diseño de los Learning Days de EGAP en la Ciudad de Guatemala, Guatemala, agosto de 2017</a></p></li>
 </ul>
 </div>
-<div id="formulario-de-diseño-y-pre-registro" class="section level2" number="2.3">
+<div id="formulario-de-diseño-y-pre-registro" class="section level2">
 <h2><span class="header-section-number">2.3</span> Formulario de diseño y pre-registro</h2>
 <ul>
-<li><p><a href="https://egap.github.io/learningdays-resources/Exercises/design-form.html">Formulario de diseño de investigación de EGAP</a>. Lista de verificación creada para los Learning Days para guiarlo a través de las etapas del proceso de investigación.</p>
+<li><a href="https://egap.github.io/learningdays-resources/Exercises/design-form.html">Formulario de diseño de investigación de EGAP</a>. Lista de verificación creada para los Learning Days para guiarlo a través de las etapas del proceso de investigación.
 <ul>
 <li><p><a href="https://egap.github.io/learningdays-resources/Exercises/design-form.docx">Versión Docx</a></p></li>
 <li><p><a href="https://egap.github.io/learningdays-resources/Exercises/design-form.pdf">Versión en PDF</a></p></li>
@@ -736,39 +683,30 @@ Una introducción de los Learning Days de EGAP</div></a>
 </ul></li>
 </ul>
 </div>
-<div id="recursos" class="section level2" number="2.4">
+<div id="recursos" class="section level2">
 <h2><span class="header-section-number">2.4</span> Recursos</h2>
-<div id="guía-de-métodos-de-egap" class="section level3" number="2.4.1">
+<div id="guía-de-métodos-de-egap" class="section level3">
 <h3><span class="header-section-number">2.4.1</span> Guía de métodos de EGAP</h3>
 <ul>
 <li><p>Guía de métodos de EGAP <a href="https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/">Las 10 cosas que usted debe saber sobre los planes de pre-análisis</a></p></li>
 <li><p>Guía de métodos de EGAP <a href="https://egap.org/resource/10-things-to-know-about-measurement-in-experiments/">Las 10 cosas que usted debe saber sobre medición en experimentos</a></p></li>
 </ul>
 </div>
-<div id="libros-capítulos-y-artículos" class="section level3" number="2.4.2">
+<div id="libros-capítulos-y-artículos" class="section level3">
 <h3><span class="header-section-number">2.4.2</span> Libros, capítulos y artículos</h3>
 <ul>
 <li><p><a href="https://oes.gsa.gov/assets/files/preregistration-as-a-tool-in-federal-evaluation.pdf">El pre-registro como herramienta para fortalecer la evaluación federal (en Inglés)</a>. Un libro blanco de la oficina de ciencias de la evaluación del gobierno de los Estados Unidos. Si desea, también puede ver ejemplos de sus planes de pre-análisis en todas sus <a href="https://oes.gsa.gov/work/">páginas sobre experimentos de campo</a>.</p></li>
-<li><p><span class="citation"><a href="#ref-christensen_transparent_2019" role="doc-biblioref">Garret S. Christensen, Jeremy Freese, y Edward Miguel, <em>Transparent and Reproductible Social Science Research: How to Do Open Science</em> (<span>Oakland, California</span>: <span>University of California Press</span>, 2019)</a>.</span> Este libro resume los nuevos enfoques de la investigación en ciencias sociales sobre transparencia y reproducibilidad.</p></li>
-<li><p><span class="citation"><a href="#ref-gerber_field_2012" role="doc-biblioref">Alan S. Gerber y Donald P. Green, <em>Field <span>Experiments</span>: <span>Design</span>, <span>Analysis</span>, and <span>Interpretation</span></em> (New York, NY: W. W. Norton &amp; Company, 2012)</a>.</span> El capitulo 12 contiene algunos ejemplos de diseño de investigación experimental.</p></li>
+<li><p><span class="citation">Garret S. Christensen, Jeremy Freese, y Edward Miguel, <em>Transparent and Reproductible Social Science Research: How to Do Open Science</em> (Oakland, California: University of California Press, <a href="referencias.html#ref-christensen_transparent_2019">2019</a>).</span> Este libro resume los nuevos enfoques de la investigación en ciencias sociales sobre transparencia y reproducibilidad.</p></li>
+<li><p><span class="citation">Alan S. Gerber y Donald P. Green, <em>Field Experiments: Design, Analysis, and Interpretation</em> (New York, NY: W. W. Norton &amp; Company, <a href="referencias.html#ref-gerber_field_2012">2012</a>).</span> El capitulo 12 contiene algunos ejemplos de diseño de investigación experimental.</p></li>
 </ul>
 </div>
-<div id="herramientas" class="section level3" number="2.4.3">
+<div id="herramientas" class="section level3">
 <h3><span class="header-section-number">2.4.3</span> Herramientas</h3>
 <ul>
 <li><a href="https://declaredesign.org/">DeclareDesign</a>, un conjunto de herramientas de software para describir, evaluar y realizar investigaciones empíricas.</li>
 </ul>
 
 </div>
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-christensen_transparent_2019" class="csl-entry">
-Christensen, Garret S., Jeremy Freese, y Edward Miguel. <em>Transparent and Reproductible Social Science Research: How to Do Open Science</em>. <span>Oakland, California</span>: <span>University of California Press</span>, 2019.
-</div>
-<div id="ref-gerber_field_2012" class="csl-entry">
-Gerber, Alan S., y Donald P. Green. <em>Field <span>Experiments</span>: <span>Design</span>, <span>Analysis</span>, and <span>Interpretation</span></em>. New York, NY: W. W. Norton &amp; Company, 2012.
 </div>
 </div>
             </section>
@@ -800,7 +738,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -809,7 +746,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/egap/theory_and_practice_of_field_experiments/edit/main/Book/researchdesignform.Rmd",
+"link": "https://github.com/egap/theory_and_practice_of_field_experiments_spanish/edit/main/Book/researchdesignform.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -820,7 +757,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["theory_and_practice_of_field_experiments.pdf", "theory_and_practice_of_field_experiments.epub"],
+"download": ["theory_and_practice_of_field_experiments_spanish.pdf", "theory_and_practice_of_field_experiments_spanish.epub"],
 "toc": {
 "collapse": "section",
 "sharing": {

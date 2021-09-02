@@ -4,19 +4,19 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Módulo 11 Glosario de términos | theory_and_practice_of_field_experiments.knit</title>
+  <title>Módulo 11 Glosario de términos | theory_and_practice_of_field_experiments_spanish.utf8</title>
   <meta name="description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Módulo 11 Glosario de términos | theory_and_practice_of_field_experiments.knit" />
+  <meta property="og:title" content="Módulo 11 Glosario de términos | theory_and_practice_of_field_experiments_spanish.utf8" />
   <meta property="og:type" content="book" />
   
   
   <meta property="og:description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
-  <meta name="github-repo" content="egap/theory_and_practice_of_field_experiments" />
+  <meta name="github-repo" content="egap/theory_and_practice_of_field_experiments_spanish" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Módulo 11 Glosario de términos | theory_and_practice_of_field_experiments.knit" />
+  <meta name="twitter:title" content="Módulo 11 Glosario de términos | theory_and_practice_of_field_experiments_spanish.utf8" />
   
   <meta name="twitter:description" content="Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación" />
   
@@ -32,7 +32,6 @@
   
 <link rel="prev" href="apéndice.html"/>
 <link rel="next" href="introducción-a-r-y-rstudio.html"/>
-<script src="book_assets/header-attrs/header-attrs.js"></script>
 <script src="book_assets/jquery/jquery.min.js"></script>
 <link href="book_assets/gitbook/css/style.css" rel="stylesheet" />
 <link href="book_assets/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -50,8 +49,6 @@
 
 
 
-<link href="book_assets/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="book_assets/anchor-sections/anchor-sections.js"></script>
 
         <script>
 /* ========================================================================
@@ -399,7 +396,6 @@ $(document).ready(function () {
   window.initializeCodeFolding("show" === "show");
 });
 </script>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QN1VN8C67"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-0QN1VN8C67'); </script>
 <script type="application/json" class="js-hypothesis-config">
 
@@ -411,27 +407,25 @@ $(document).ready(function () {
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -440,9 +434,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -475,29 +469,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -514,137 +485,113 @@ div.csl-indent {
 <li><a href="./"><img src="Images/egap-logo.png" alt="EGAP Logo" width=100>EGAP Learning Days</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
-<ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cómo-usar-este-libro"><i class="fa fa-check"></i><b>1.1</b> Cómo usar este libro</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#nos-encantaría-saber-lo-que-piensa"><i class="fa fa-check"></i><b>1.2</b> ¡Nos encantaría saber lo que piensa!</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i><b>1.3</b> Agradecimientos</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html"><i class="fa fa-check"></i><b>2</b> El Proceso del diseño de investigación</a>
-<ul>
+<li class="chapter" data-level="2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html"><i class="fa fa-check"></i><b>2</b> El Proceso del diseño de investigación</a><ul>
 <li class="chapter" data-level="2.1" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#contenido-principal"><i class="fa fa-check"></i><b>2.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="2.2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#diapositivas"><i class="fa fa-check"></i><b>2.2</b> Diapositivas</a></li>
 <li class="chapter" data-level="2.3" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#formulario-de-diseño-y-pre-registro"><i class="fa fa-check"></i><b>2.3</b> Formulario de diseño y pre-registro</a></li>
-<li class="chapter" data-level="2.4" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#recursos"><i class="fa fa-check"></i><b>2.4</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="2.4" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#recursos"><i class="fa fa-check"></i><b>2.4</b> Recursos</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#guía-de-métodos-de-egap"><i class="fa fa-check"></i><b>2.4.1</b> Guía de métodos de EGAP</a></li>
 <li class="chapter" data-level="2.4.2" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#libros-capítulos-y-artículos"><i class="fa fa-check"></i><b>2.4.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="2.4.3" data-path="el-proceso-del-diseño-de-investigación.html"><a href="el-proceso-del-diseño-de-investigación.html#herramientas"><i class="fa fa-check"></i><b>2.4.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="inferencia-causal.html"><a href="inferencia-causal.html"><i class="fa fa-check"></i><b>3</b> Inferencia causal</a>
-<ul>
+<li class="chapter" data-level="3" data-path="inferencia-causal.html"><a href="inferencia-causal.html"><i class="fa fa-check"></i><b>3</b> Inferencia causal</a><ul>
 <li class="chapter" data-level="3.1" data-path="inferencia-causal.html"><a href="inferencia-causal.html#contenido-principal-1"><i class="fa fa-check"></i><b>3.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="3.2" data-path="inferencia-causal.html"><a href="inferencia-causal.html#diapositivas-1"><i class="fa fa-check"></i><b>3.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#recursos-1"><i class="fa fa-check"></i><b>3.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#recursos-1"><i class="fa fa-check"></i><b>3.3</b> Recursos</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="inferencia-causal.html"><a href="inferencia-causal.html#guías-de-métodos-de-egap"><i class="fa fa-check"></i><b>3.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="3.3.2" data-path="inferencia-causal.html"><a href="inferencia-causal.html#causalinference-cites"><i class="fa fa-check"></i><b>3.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="3.3.3" data-path="inferencia-causal.html"><a href="inferencia-causal.html#informes-de-egap-sobre-políticas-públicas"><i class="fa fa-check"></i><b>3.3.3</b> Informes de EGAP sobre políticas públicas:</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="aleatorización.html"><a href="aleatorización.html"><i class="fa fa-check"></i><b>4</b> Aleatorización</a>
-<ul>
+<li class="chapter" data-level="4" data-path="aleatorización.html"><a href="aleatorización.html"><i class="fa fa-check"></i><b>4</b> Aleatorización</a><ul>
 <li class="chapter" data-level="4.1" data-path="aleatorización.html"><a href="aleatorización.html#contenido-principal-2"><i class="fa fa-check"></i><b>4.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="4.2" data-path="aleatorización.html"><a href="aleatorización.html#diapositivas-2"><i class="fa fa-check"></i><b>4.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="4.3" data-path="aleatorización.html"><a href="aleatorización.html#recursos-2"><i class="fa fa-check"></i><b>4.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="4.3" data-path="aleatorización.html"><a href="aleatorización.html#recursos-2"><i class="fa fa-check"></i><b>4.3</b> Recursos</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="aleatorización.html"><a href="aleatorización.html#guías-de-métodos-de-egap-1"><i class="fa fa-check"></i><b>4.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="4.3.2" data-path="aleatorización.html"><a href="aleatorización.html#libros-capítulos-y-artículos-1"><i class="fa fa-check"></i><b>4.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="4.3.3" data-path="aleatorización.html"><a href="aleatorización.html#informes-de-egap-sobre-políticas-públicas-1"><i class="fa fa-check"></i><b>4.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 <li class="chapter" data-level="4.3.4" data-path="aleatorización.html"><a href="aleatorización.html#herramientas-1"><i class="fa fa-check"></i><b>4.3.4</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de hipótesis</a>
-<ul>
+<li class="chapter" data-level="5" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html"><i class="fa fa-check"></i><b>5</b> Pruebas de hipótesis</a><ul>
 <li class="chapter" data-level="5.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#contenido-principal-3"><i class="fa fa-check"></i><b>5.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="5.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#diapositivas-3"><i class="fa fa-check"></i><b>5.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#recursos-3"><i class="fa fa-check"></i><b>5.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="5.3" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#recursos-3"><i class="fa fa-check"></i><b>5.3</b> Recursos</a><ul>
 <li class="chapter" data-level="5.3.1" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#guías-de-métodos-de-egap-2"><i class="fa fa-check"></i><b>5.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="5.3.2" data-path="pruebas-de-hipótesis.html"><a href="pruebas-de-hipótesis.html#libros-capítulos-y-artículos-2"><i class="fa fa-check"></i><b>5.3.2</b> Libros, capítulos y artículos</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html"><i class="fa fa-check"></i><b>6</b> Estimandos y estimadores</a>
-<ul>
+<li class="chapter" data-level="6" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html"><i class="fa fa-check"></i><b>6</b> Estimandos y estimadores</a><ul>
 <li class="chapter" data-level="6.1" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#contenido-principal-4"><i class="fa fa-check"></i><b>6.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="6.2" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#diapositivas-4"><i class="fa fa-check"></i><b>6.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="6.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#recursos-4"><i class="fa fa-check"></i><b>6.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="6.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#recursos-4"><i class="fa fa-check"></i><b>6.3</b> Recursos</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#guías-de-métodos-de-egap-3"><i class="fa fa-check"></i><b>6.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="6.3.2" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#libros-capítulos-y-artículos-3"><i class="fa fa-check"></i><b>6.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="6.3.3" data-path="estimandos-y-estimadores.html"><a href="estimandos-y-estimadores.html#herramientas-2"><i class="fa fa-check"></i><b>6.3.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html"><i class="fa fa-check"></i><b>7</b> Poder estadístico y diagnosticandos del diseño</a>
-<ul>
+<li class="chapter" data-level="7" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html"><i class="fa fa-check"></i><b>7</b> Poder estadístico y diagnosticandos del diseño</a><ul>
 <li class="chapter" data-level="7.1" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#contenido-principal-5"><i class="fa fa-check"></i><b>7.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="7.2" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#diapositivas-5"><i class="fa fa-check"></i><b>7.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="7.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#recursos-5"><i class="fa fa-check"></i><b>7.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="7.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#recursos-5"><i class="fa fa-check"></i><b>7.3</b> Recursos</a><ul>
 <li class="chapter" data-level="7.3.1" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#guías-de-métodos-de-egap-4"><i class="fa fa-check"></i><b>7.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="7.3.2" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#informes-de-egap-sobre-políticas-públicas-y-paps"><i class="fa fa-check"></i><b>7.3.2</b> Informes de EGAP sobre políticas públicas y PAPs</a></li>
 <li class="chapter" data-level="7.3.3" data-path="poder-estadístico-y-diagnosticandos-del-diseño.html"><a href="poder-estadístico-y-diagnosticandos-del-diseño.html#herramientas-3"><i class="fa fa-check"></i><b>7.3.3</b> Herramientas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="medición.html"><a href="medición.html"><i class="fa fa-check"></i><b>8</b> Medición</a>
-<ul>
+<li class="chapter" data-level="8" data-path="medición.html"><a href="medición.html"><i class="fa fa-check"></i><b>8</b> Medición</a><ul>
 <li class="chapter" data-level="8.1" data-path="medición.html"><a href="medición.html#contenido-principal-6"><i class="fa fa-check"></i><b>8.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="8.2" data-path="medición.html"><a href="medición.html#diapositivas-6"><i class="fa fa-check"></i><b>8.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="8.3" data-path="medición.html"><a href="medición.html#recursos-6"><i class="fa fa-check"></i><b>8.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="8.3" data-path="medición.html"><a href="medición.html#recursos-6"><i class="fa fa-check"></i><b>8.3</b> Recursos</a><ul>
 <li class="chapter" data-level="8.3.1" data-path="medición.html"><a href="medición.html#guías-de-métodos-de-egap-5"><i class="fa fa-check"></i><b>8.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="8.3.2" data-path="medición.html"><a href="medición.html#libros-capítulos-y-artículos-4"><i class="fa fa-check"></i><b>8.3.2</b> Libros, Capítulos y Artículos</a></li>
 <li class="chapter" data-level="8.3.3" data-path="medición.html"><a href="medición.html#informes-de-egap-sobre-políticas-públicas-2"><i class="fa fa-check"></i><b>8.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><i class="fa fa-check"></i><b>9</b> Amenazas a la validez interna de los experimentos aleatorios</a>
-<ul>
+<li class="chapter" data-level="9" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><i class="fa fa-check"></i><b>9</b> Amenazas a la validez interna de los experimentos aleatorios</a><ul>
 <li class="chapter" data-level="9.1" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#contenido-principal-7"><i class="fa fa-check"></i><b>9.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="9.2" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#diapositivas-7"><i class="fa fa-check"></i><b>9.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="9.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#recursos-7"><i class="fa fa-check"></i><b>9.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="9.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#recursos-7"><i class="fa fa-check"></i><b>9.3</b> Recursos</a><ul>
 <li class="chapter" data-level="9.3.1" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#guías-de-métodos-de-egap-6"><i class="fa fa-check"></i><b>9.3.1</b> Guías de métodos de EGAP</a></li>
 <li class="chapter" data-level="9.3.2" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#libros-capítulos-y-artículos-5"><i class="fa fa-check"></i><b>9.3.2</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="9.3.3" data-path="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html"><a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html#informes-de-egap-sobre-políticas-públicas-3"><i class="fa fa-check"></i><b>9.3.3</b> Informes de EGAP sobre políticas públicas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>10</b> Consideraciones éticas</a>
-<ul>
+<li class="chapter" data-level="10" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>10</b> Consideraciones éticas</a><ul>
 <li class="chapter" data-level="10.1" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#contenido-principal-8"><i class="fa fa-check"></i><b>10.1</b> Contenido principal</a></li>
 <li class="chapter" data-level="10.2" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#diapositivas-8"><i class="fa fa-check"></i><b>10.2</b> Diapositivas</a></li>
-<li class="chapter" data-level="10.3" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#recursos-8"><i class="fa fa-check"></i><b>10.3</b> Recursos</a>
-<ul>
+<li class="chapter" data-level="10.3" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#recursos-8"><i class="fa fa-check"></i><b>10.3</b> Recursos</a><ul>
 <li class="chapter" data-level="10.3.1" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#libros-capítulos-y-artículos-6"><i class="fa fa-check"></i><b>10.3.1</b> Libros, capítulos y artículos</a></li>
 <li class="chapter" data-level="10.3.2" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html#artículos-ciéntificos-y-paps"><i class="fa fa-check"></i><b>10.3.2</b> Artículos ciéntificos y PAPs</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="apéndice.html"><a href="apéndice.html"><i class="fa fa-check"></i>Apéndice</a></li>
-<li class="chapter" data-level="11" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html"><i class="fa fa-check"></i><b>11</b> Glosario de términos</a>
-<ul>
+<li class="chapter" data-level="11" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html"><i class="fa fa-check"></i><b>11</b> Glosario de términos</a><ul>
 <li class="chapter" data-level="11.1" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#conceptos-claves"><i class="fa fa-check"></i><b>11.1</b> Conceptos claves</a></li>
 <li class="chapter" data-level="11.2" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#inferencia-estadística"><i class="fa fa-check"></i><b>11.2</b> Inferencia estadística</a></li>
 <li class="chapter" data-level="11.3" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#estrategias-de-aleatorización"><i class="fa fa-check"></i><b>11.3</b> Estrategias de aleatorización</a></li>
 <li class="chapter" data-level="11.4" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#diseños-factoriales"><i class="fa fa-check"></i><b>11.4</b> Diseños factoriales</a></li>
 <li class="chapter" data-level="11.5" data-path="glosario-de-términos.html"><a href="glosario-de-términos.html#amenazas"><i class="fa fa-check"></i><b>11.5</b> Amenazas</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>12</b> Introducción a R y RStudio</a>
-<ul>
+<li class="chapter" data-level="12" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html"><i class="fa fa-check"></i><b>12</b> Introducción a R y RStudio</a><ul>
 <li class="chapter" data-level="12.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#r-y-rstudio"><i class="fa fa-check"></i><b>12.1</b> R y RStudio</a></li>
-<li class="chapter" data-level="12.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descarga-de-r-y-rstudio"><i class="fa fa-check"></i><b>12.2</b> Descarga de R y RStudio</a>
-<ul>
+<li class="chapter" data-level="12.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descarga-de-r-y-rstudio"><i class="fa fa-check"></i><b>12.2</b> Descarga de R y RStudio</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descargando-r"><i class="fa fa-check"></i><b>12.2.1</b> Descargando R</a></li>
 <li class="chapter" data-level="12.2.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#descargando-rstudio"><i class="fa fa-check"></i><b>12.2.2</b> Descargando RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="12.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#interfaz-de-rstudio"><i class="fa fa-check"></i><b>12.3</b> Interfaz de RStudio</a>
-<ul>
+<li class="chapter" data-level="12.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#interfaz-de-rstudio"><i class="fa fa-check"></i><b>12.3</b> Interfaz de RStudio</a><ul>
 <li class="chapter" data-level="12.3.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#consola"><i class="fa fa-check"></i><b>12.3.1</b> Consola</a></li>
 <li class="chapter" data-level="12.3.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#editor"><i class="fa fa-check"></i><b>12.3.2</b> Editor</a></li>
 <li class="chapter" data-level="12.3.3" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#entorno-historial-y-otros"><i class="fa fa-check"></i><b>12.3.3</b> Entorno, historial y otros</a></li>
 <li class="chapter" data-level="12.3.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#misceláneo"><i class="fa fa-check"></i><b>12.3.4</b> Misceláneo</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#aprendiendo-a-usar-r"><i class="fa fa-check"></i><b>12.4</b> Aprendiendo a usar R</a>
-<ul>
+<li class="chapter" data-level="12.4" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#aprendiendo-a-usar-r"><i class="fa fa-check"></i><b>12.4</b> Aprendiendo a usar R</a><ul>
 <li class="chapter" data-level="12.4.1" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#recursos-en-línea"><i class="fa fa-check"></i><b>12.4.1</b> Recursos en línea</a></li>
 <li class="chapter" data-level="12.4.2" data-path="introducción-a-r-y-rstudio.html"><a href="introducción-a-r-y-rstudio.html#práctica-básica"><i class="fa fa-check"></i><b>12.4.2</b> Práctica básica</a></li>
 </ul></li>
@@ -671,30 +618,30 @@ Una introducción de los Learning Days de EGAP</div></a>
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="glosario-de-términos" class="section level1 tabset" number="11">
+<div id="glosario-de-términos" class="section level1 tabset">
 <h1><span class="header-section-number">Módulo 11</span> Glosario de términos</h1>
 <p>A continuación presentamos una recopilación de los términos técnicos que se utilizan con frecuencia en el libro y, en general, en las discusiones sobre experimentos aleatorios de campo.</p>
-<div id="conceptos-claves" class="section level2" number="11.1">
+<div id="conceptos-claves" class="section level2">
 <h2><span class="header-section-number">11.1</span> Conceptos claves</h2>
 <p>Puede consultar el módulo de <a href="inferencia-causal.html">inferencia causal</a>, <a href="estimandos-y-estimadores.html">estimandos y estimadores</a>.</p>
 <ul>
 <li><p><strong>Salidas potenciales <span class="math inline">\(Y_i(T)\)</span></strong> El valor que la unidad <span class="math inline">\(i\)</span> <em>tomaría</em> en la variable <span class="math inline">\(Y\)</span> si fuese asignada al tratamiento <span class="math inline">\(T\)</span>. Se asume que este valor es fijo para un momento dado en el tiempo. En el caso de que solo haya un tratamiento, <span class="math inline">\(T\)</span> puede recibir el valor 0 para el grupo control o 1 para el grupo tratado. Ver el módulo de <a href="inferencia-causal.html">inferencia causal</a>.</p></li>
 <li><p><strong>Efecto del tratamiento <span class="math inline">\(\tau_i\)</span> para la unidad <span class="math inline">\(i\)</span></strong> La diferencia entre las salidas potenciales bajo las dos condiciones posibles de tratamiento para la unidad <span class="math inline">\(i\)</span>. Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, $ Y_i (1) -Y_i (0) $. Ver el módulo sobre <a href="inferencia-causal.html">inferencia causal</a>.</p></li>
 <li><p><strong>El problema fundamental de la inferencia causal</strong> en el marco contrafactual. No podemos observar <span class="math inline">\(Y_i(1)\)</span> y <span class="math inline">\(Y_i(0)\)</span> al mismo tiempo para ninguna unidad, por lo que no podemos calcular <span class="math inline">\(\tau_i\)</span> directamente. Ver el módulo de <a href="inference-causal.html">inferencia causal</a>.</p></li>
-<li><p><strong>Estimando</strong> Aquella cantidad que se quiere estimar. Un ejemplo de un estimando es el efecto promedio del tratamiento. En la inferencia causal contrafactual este es una función de salidas potenciales, es decir cantidades que no pueden ser observadas en su totalidad. Ver el módulo de <a href="estimandos-y-estimadores.html">estimandos and estimadores</a>.</p></li>
-<li><p><strong>Estimador</strong> Cómo estimar el valor de un estimando haciendo uso de los datos que se tienen disponibles (es decir, los datos observados). Un ejemplo de un estimador es la diferencia de medias. Ver el módulo de <a href="estimandos-y-estimadores.html">estimandos y estimadores</a>.</p>
+<li><strong>Estimando</strong> Aquella cantidad que se quiere estimar. Un ejemplo de un estimando es el efecto promedio del tratamiento. En la inferencia causal contrafactual este es una función de salidas potenciales, es decir cantidades que no pueden ser observadas en su totalidad. Ver el módulo de <a href="estimandos-y-estimadores.html">estimandos and estimadores</a>.</li>
+<li><strong>Estimador</strong> Cómo estimar el valor de un estimando haciendo uso de los datos que se tienen disponibles (es decir, los datos observados). Un ejemplo de un estimador es la diferencia de medias. Ver el módulo de <a href="estimandos-y-estimadores.html">estimandos y estimadores</a>.
 <ul>
 <li><strong>Efecto promedio del tratamiento (average treatment effect, ATE)</strong> El efecto promedio del tratamiento para todas las unidades en el grupo de estudio. Este es un tipo de <strong>estimando</strong>. Si definimos <span class="math inline">\(\tau_i\)</span> igual a <span class="math inline">\(Y_i(1)-Y_i(0)\)</span>, entonces el ATE es <span class="math inline">\(\overline{Y_i(1)-Y_i(0)}\)</span>, lo cual es equivalente a <span class="math inline">\(\overline{{Y}_i(1)}-\overline{{Y}_i(0)}\)</span>. Dese cuenta que no utilizamos la notación del tipo <span class="math inline">\(E[Y_i (1)]\)</span>, porque <span class="math inline">\(E[]\)</span> significa “el promedio sobre un número repetido de operaciones”, mientras que <span class="math inline">\(\overline{Y}\)</span> significa “el promedio sobre un número de observaciones”. Ver el módulo de <a href="inferencia-causal.html">inferencia causal</a> y el módulo de <a href="estimandos-y-estimadores.html">estimandos y estimadores</a>.</li>
 </ul></li>
-<li><p><strong>Muestreo aleatorio</strong> Seleccionar sujetos de una población con
-probabilidades conocidas estrictamente entre 0 y 1.</p></li>
-<li><p><strong>Experimentos con <span class="math inline">\(k\)</span> brazos de tratamientos</strong> Un experimento que tiene <span class="math inline">\(k\)</span> condiciones de tratamientos
-(incluyendo el control). Ver el módulo de <a href="aleatorizaciónn.html">aleatorización</a>.</p></li>
-<li><p><strong>Asignación aleatoria a tratamientos</strong>. Asignar sujetos a las distintas condiciones en un experimento con probabilidades conocidas que estén estrictamente entre 0 y 1. Esto es equivalente a hacer muestreo aleatorio con reemplazo del universo de salidas potenciales. Existen distintas formas de hacer asignación aleatoria a tratamientos: simple, completa, por conglomerados, por bloques, por bloques y conglomerados. Ver el módulo de <a href="aleatorización.html">aleatorización</a>.</p></li>
+<li><strong>Muestreo aleatorio</strong> Seleccionar sujetos de una población con
+probabilidades conocidas estrictamente entre 0 y 1.</li>
+<li><strong>Experimentos con <span class="math inline">\(k\)</span> brazos de tratamientos</strong> Un experimento que tiene <span class="math inline">\(k\)</span> condiciones de tratamientos
+(incluyendo el control). Ver el módulo de <a href="aleatorizaciónn.html">aleatorización</a>.</li>
+<li><strong>Asignación aleatoria a tratamientos</strong>. Asignar sujetos a las distintas condiciones en un experimento con probabilidades conocidas que estén estrictamente entre 0 y 1. Esto es equivalente a hacer muestreo aleatorio con reemplazo del universo de salidas potenciales. Existen distintas formas de hacer asignación aleatoria a tratamientos: simple, completa, por conglomerados, por bloques, por bloques y conglomerados. Ver el módulo de <a href="aleatorización.html">aleatorización</a>.</li>
 <li><p><strong>Validez externa</strong> Los resultados de un estudio pueden informarnos acerca de otros contextos. Por ejemplo, en otros lugares o para otras intervenciones.</p></li>
 </ul>
 </div>
-<div id="inferencia-estadística" class="section level2" number="11.2">
+<div id="inferencia-estadística" class="section level2">
 <h2><span class="header-section-number">11.2</span> Inferencia estadística</h2>
 <p>Puede consultar los módulos de <a href="pruebas-de-hipótesis.html">pruebas de hipótesis</a> y <a href="poder-estadístico-y-diagnosticandos-del-diseño.html">poder estadístico</a>.</p>
 <ul>
@@ -729,7 +676,7 @@ Ver el módulo de <a href="pruebas-de-hipótesis.html">pruebas de hipótesis</a>
 <li><strong>Precisión/eficiencia de un estimador</strong> La variación o la amplitud de la distribución del muestreo de un estimador. Ver el módulo de <a href="estimandos-y-estimadores.html">estimandos y estimadores</a>.</li>
 </ul>
 </div>
-<div id="estrategias-de-aleatorización" class="section level2" number="11.3">
+<div id="estrategias-de-aleatorización" class="section level2">
 <h2><span class="header-section-number">11.3</span> Estrategias de aleatorización</h2>
 <p>Puede consultar el módulo de <a href="aleatorización.html">aleatorización</a>.</p>
 <ul>
@@ -741,23 +688,23 @@ Ver el módulo de <a href="pruebas-de-hipótesis.html">pruebas de hipótesis</a>
 <li><strong>Bloque-Conglomerado</strong> Primero se forman bloques de conglomerados. Luego, en cada bloque, se asignan conglomerados al tratamiento siguiendo una aletorización completa.</li>
 </ul>
 </div>
-<div id="diseños-factoriales" class="section level2" number="11.4">
+<div id="diseños-factoriales" class="section level2">
 <h2><span class="header-section-number">11.4</span> Diseños factoriales</h2>
 <p>Puede consultar el módulo de <a href="aleatorización.html">aleatorización</a>.</p>
 <ul>
 <li><p><strong>Diseño factorial</strong> Un diseño con más de un tratamiento, en el que cada tratamiento se asigna de forma independiente. El diseño factorial más simple es el diseño factorial de <span class="math inline">\(2\times 2\)</span>.</p></li>
-<li><p><strong>Efecto marginal condicional</strong> El efecto de un tratamiento condicionando el valor de otro tratamiento a un valor fijo. Por ejemplo:
-<span class="math inline">\(Y_i(T_1=1|T_2=0)-Y_i(T_1=0|T_2=0)\)</span> es el efecto marginal de <span class="math inline">\(T_1\)</span> condicionado a que <span class="math inline">\(T_2=0\)</span>.</p></li>
-<li><p><strong>Efecto marginal promedio</strong> Efecto principal de cada tratamiento en un diseño factorial. Es el promedio de los efecto marginales condicionales
-calculado para todas las condiciones del otro tratamiento y ajustado por la proporción de unidades de la muestra que fueron asignadas a cada condición</p></li>
-<li><p><strong>Efecto de interacción</strong> En un diseño factorial también se pueden estimar los efectos de interacción.</p>
+<li><strong>Efecto marginal condicional</strong> El efecto de un tratamiento condicionando el valor de otro tratamiento a un valor fijo. Por ejemplo:
+<span class="math inline">\(Y_i(T_1=1|T_2=0)-Y_i(T_1=0|T_2=0)\)</span> es el efecto marginal de <span class="math inline">\(T_1\)</span> condicionado a que <span class="math inline">\(T_2=0\)</span>.</li>
+<li><strong>Efecto marginal promedio</strong> Efecto principal de cada tratamiento en un diseño factorial. Es el promedio de los efecto marginales condicionales
+calculado para todas las condiciones del otro tratamiento y ajustado por la proporción de unidades de la muestra que fueron asignadas a cada condición</li>
+<li><strong>Efecto de interacción</strong> En un diseño factorial también se pueden estimar los efectos de interacción.
 <ul>
 <li>Efecto de interación nulo: un tratamiento no intensifica o reduce el efecto del otro tratamiento.</li>
 <li>Efecto de interacción multiplicativo: el efecto de un tratamiento depende de la condición a la que una unidad es asignada en el otro tratamiento. Esto quiere decir que un tratamiento <em>sí</em> intensifica o reduce el efecto del otro. El efecto de la combinación de los dos tratamientos <em>no</em> es igual a la suma de cada tratamiento.</li>
 </ul></li>
 </ul>
 </div>
-<div id="amenazas" class="section level2" number="11.5">
+<div id="amenazas" class="section level2">
 <h2><span class="header-section-number">11.5</span> Amenazas</h2>
 <p>Puede consultar el módulo de <a href="amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html">amenazas</a>.</p>
 <ul>
@@ -818,7 +765,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -827,7 +773,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/egap/theory_and_practice_of_field_experiments/edit/main/Book/glossary.Rmd",
+"link": "https://github.com/egap/theory_and_practice_of_field_experiments_spanish/edit/main/Book/glossary.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -838,7 +784,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["theory_and_practice_of_field_experiments.pdf", "theory_and_practice_of_field_experiments.epub"],
+"download": ["theory_and_practice_of_field_experiments_spanish.pdf", "theory_and_practice_of_field_experiments_spanish.epub"],
 "toc": {
 "collapse": "section",
 "sharing": {
