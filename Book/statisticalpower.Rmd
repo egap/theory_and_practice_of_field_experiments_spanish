@@ -32,11 +32,11 @@ En este módulo presentamos: el poder estadístico, los enfoques básicos para c
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre poder estadístico.  Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
 
- - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides/power-slides.Rmd)
+ - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/power-slides.Rmd)
 
- - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/power-slides.pdf)
+ - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/power-slides.pdf)
 
- - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/power-slides.html)
+ - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/power-slides.html)
 
 Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de los Learning Days de EGAP:
 

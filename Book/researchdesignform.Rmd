@@ -32,11 +32,11 @@ Este módulo presenta el [formulario para el diseño de investigación de EGAP](
 
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre diseño de investigación.  Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
-- [Archivos de R Markdown ](https://egap.github.io/learningdays-resources/Slides/researchdesignform-slides.Rmd)
+- [Archivos de R Markdown ](https://egap.github.io/learningdays-resources/Slides_esp/researchdesignform-slides.Rmd)
 
-- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/researchdesignform-slides.pdf)
+- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/researchdesignform-slides.pdf)
 
-- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/researchdesignform-slides.html)
+- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/researchdesignform-slides.html)
 
 Si desea, también puede ver las diapositivas utilizadas en sesiones previas de los Learning Days de EGAP:
 

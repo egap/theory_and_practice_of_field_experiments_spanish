@@ -33,11 +33,11 @@ En este módulo presentamos varios tipos de estimandos, es decir, la cantidad ob
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre estimación.
 
 
-- [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides/estimation-slides.Rmd)
+- [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/estimation-slides.Rmd)
 
-- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/estimation-slides.pdf)
+- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/estimation-slides.pdf)
 
-- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/estimation-slides.html)
+- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/estimation-slides.html)
 
 Si desea, también puede ver las diapositivas utilizadas en sesiones previas de los Learning Days de EGAP:
 

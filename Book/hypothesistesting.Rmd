@@ -39,11 +39,11 @@ En este módulo presentamos: las pruebas de hipótesis, cómo estas se relaciona
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre pruebas de hipótesis.  Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
 
- - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides/hypothesistesting-slides.Rmd)
+ - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/hypothesistesting-slides.Rmd)
 
- - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/hypothesistesting-slides.pdf)
+ - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/hypothesistesting-slides.pdf)
 
- - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/hypothesistesting-slides.html)
+ - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/hypothesistesting-slides.html)
 
 Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de los Learning Days de EGAP:
 

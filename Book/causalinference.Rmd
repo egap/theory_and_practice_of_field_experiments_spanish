@@ -37,11 +37,11 @@ En este módulo presentamos el enfoque contrafactual de la inferencia causal y c
 
 A continuación presentamos las diapositivas con el contenido principal cubierto durante nuestra clase sobre causalidad. Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
-- [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides/causalinference-slides.Rmd)
+- [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/causalinference-slides.Rmd)
 
-- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/causalinference-slides.pdf)
+- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/causalinference-slides.pdf)
 
-- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/causalinference-slides.html)
+- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/causalinference-slides.html)
 
 Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de los Learning Days de EGAP:
 

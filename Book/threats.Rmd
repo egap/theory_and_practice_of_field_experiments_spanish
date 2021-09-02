@@ -37,11 +37,11 @@ En este módulo cubrimos algunas amenazas comunes y prácticas para aprender a e
 
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre amenazas a la validez interna de los experimentos aleatorios.  Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
- - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides/threats-slides.Rmd)
+ - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/threats-slides.Rmd)
 
- - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/threats-slides.pdf)
+ - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/threats-slides.pdf)
 
- - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/threats-slides.html)
+ - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/threats-slides.html)
 
 Si desea, también puede ver las diapositivas utilizadas en sesiones previas de los Learning Days de EGAP:
 

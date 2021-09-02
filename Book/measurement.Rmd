@@ -28,11 +28,11 @@ Este módulo analiza *qué medir* y *cómo medir*. Muestra cómo una buena medic
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre medición.  Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
 
- - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides/measurement-slides.Rmd)
+ - [Archivo de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/measurement-slides.Rmd)
 
- - [Versión de PDF](https://egap.github.io/learningdays-resources/Slides/measurement-slides.pdf)
+ - [Versión de PDF](https://egap.github.io/learningdays-resources/Slides_esp/measurement-slides.pdf)
 
- - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/measurement-slides.html)
+ - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/measurement-slides.html)
 
 ## Recursos
 

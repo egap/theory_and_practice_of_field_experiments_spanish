@@ -38,11 +38,11 @@ A continuación presentamos cuatro formas comunes de aleatorizar el tratamiento:
 
 A continuación presentamos las diapositivas con el contenido principal que cubrimos en nuestra clase sobre aleatorización.  Usted puede usar directamente los archivos originales de las diapositivas o también puede copiarlos y editarlos localmente.
 
-- [Archivos de R Markdown](https://egap.github.io/learningdays-resources/Slides/randomization-slides.Rmd)
+- [Archivos de R Markdown](https://egap.github.io/learningdays-resources/Slides_esp/randomization-slides.Rmd)
 
-- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/randomization-slides.pdf)
+- [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/randomization-slides.pdf)
 
-- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/randomization-slides.html)
+- [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/randomization-slides.html)
 
 Los archivos vinculados muestran cómo [hacer aleatorización replicable en R](https://egap.github.io/learningdays-resources/Exercises/randomization-exercises.Rmd). También puede ver más ejemplos de aleatorización en R en [10 cosas que necesita saber sobre la aleatorización](https://egap.org/resource/10-things-to-know-about-randomization/).
 

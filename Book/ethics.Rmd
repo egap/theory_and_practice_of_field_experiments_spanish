@@ -29,11 +29,11 @@ A continuación presentamos las diapositivas con el contenido principal que cubr
 
 
 
- - [Archivo de R Markdown Source](https://egap.github.io/learningdays-resources/Slides/ethics-slides.Rmd)
+ - [Archivo de R Markdown Source](https://egap.github.io/learningdays-resources/Slides_esp/ethics-slides.Rmd)
 
- - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides/ethics-slides.pdf)
+ - [Versión en PDF](https://egap.github.io/learningdays-resources/Slides_esp/ethics-slides.pdf)
 
- - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides/ethics-slides.html)
+ - [Versión de HTML](https://egap.github.io/learningdays-resources/Slides_esp/ethics-slides.html)
 
 ## Recursos
 
