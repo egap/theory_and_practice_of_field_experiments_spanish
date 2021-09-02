@@ -1,6 +1,0 @@
-Package: placeholder
-Type: Book
-Title: 'La teoría y la práctica de los experimentos de campo: Una introducción de los Learning Days de EGAP'
-Version: 1.0.0
-Imports: bookdown
-Remotes: rstudio/bookdown
