@@ -22,7 +22,7 @@ bookdown::gitbook:
         instapaper: yes
         vk: no
         all: ['facebook', 'github', 'twitter', 'linkedin', 'weibo', 'instapaper']
-    edit: https://github.com/egap/theory_and_practice_of_field_experiments/edit/main/Book/%s
+    edit: https://github.com/egap/theory_and_practice_of_field_experiments_spanish/edit/main/Book/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
@@ -31,6 +31,6 @@ bookdown::pdf_book:
   latex_engine: xelatex
   keep_tex: yes
   citation_package: biblatex
-  lot: false 
-  lof: false 
+  lot: false
+  lof: false
 bookdown::epub_book: default

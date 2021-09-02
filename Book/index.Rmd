@@ -11,7 +11,7 @@ documentclass: book
 bibliography: learningdays-book.bib
 link-citations: yes
 colorlinks: yes
-github-repo: egap/theory_and_practice_of_field_experiments
+github-repo: egap/theory_and_practice_of_field_experiments_spanish
 description: "Learning Days de EGAP, inferencia causal, experimentos aleatorizados, experimentos de campo, diseño experimental, diseño de investigación"
 fontsize: 12pt
 geometry: margin=1in
@@ -133,7 +133,7 @@ Para que pueda obtener el mayor beneficio de este libro, le recomendamos tener [
 
 Para familiarizarse con R, le recomendamos consultar el módulo [Introducción a R y R Studio](introducción-a-r-y-rstudio.html).
 
-Si desea puede copiar este libro o partes del mismo (por ejemplo, diapositivas, etc.) usando el botón para Descargar (Download) en la página principal de <http://github.com/egap/theory_and_practice_of_field_experiments> o directamente en GitHub bifurcando (forking) este repositorio.
+Si desea puede copiar este libro o partes del mismo (por ejemplo, diapositivas, etc.) usando el botón para Descargar (Download) en la página principal de <http://github.com/egap/theory_and_practice_of_field_experiments_spanish> o directamente en GitHub bifurcando (forking) este repositorio.
 
 
 Cualquier persona puede utilizar el material didáctico, siempre y cuando se le reconozca al autor y se dé crédito a EGAP. Por favor, consulte la licencia internacional Creative Commons Attribution-ShareAlike 4.0 para conocer los términos exactos.
@@ -142,7 +142,7 @@ Cualquier persona puede utilizar el material didáctico, siempre y cuando se le 
 ## ¡Nos encantaría saber lo que piensa!
 
 
-Si tiene alguna pregunta, comentario o ha organizado su propio evento, ¡póngase en contacto con nosotros! Para hacerlo puede crear un  _issue_ en [Github](https://github.com/egap/theory_and_practice_of_field_experiments/issues) o escríbirnos sus comentarios usando hypothes.is en su navegador. Por favor escríbanos al correo electrónico admin@egap.org con sus comentarios. Estaremos revisando dicha cuenta periódicamente.
+Si tiene alguna pregunta, comentario o ha organizado su propio evento, ¡póngase en contacto con nosotros! Para hacerlo puede crear un  _issue_ en [Github](https://github.com/egap/theory_and_practice_of_field_experiments_spanish/issues) o escríbirnos sus comentarios usando hypothes.is en su navegador. Por favor escríbanos al correo electrónico admin@egap.org con sus comentarios. Estaremos revisando dicha cuenta periódicamente.
 
 ## Agradecimientos
 
