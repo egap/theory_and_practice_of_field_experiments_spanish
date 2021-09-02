@@ -1,0 +1,47 @@
+# Poniéndolo todo en práctica {.tabset}
+
+Una vez que haya completado el [Formulario del diseño de la investigación](research-design.html) y recibido fondos, o tal vez incluso haya
+completado su proyecto, enfrentará una serie de otros desafíos.
+
+Este módulo  enumera algunos de esos desafíos con enlaces asociados y referencias que pueden resultar útiles tales como flujo de trabajo y planes de preanálisis.
+
+## Contenido principal
+
+### Flujo de trabajo
+
+¿Cómo recordará lo que hizo un año, dos o diez, después de hacerlo? ¿Cómo se asegurará de que las tablas, los gráficos y los resultados que utiliza para guiar las decisiones políticas no sean el resultado de errores de copiar y pegar? ¿O que su código no incluyó una variable codificada en reversa inadvertidamente, produciendo la conclusión opuesta a la que acaba de decirle al Ministro de Salud? Aunque ningún enfoque puede evitar los errores por completo, algunos enfoques básicos para organizar el trabajo pueden ayudar a evitarlos. Estos implican, en su raíz, un cambio de alguien que hace ensayos rápidos para entregarlos al final de un período (ensayos que nunca se volverán a revisar en serio) a alguien que participe en una colaboración de décadas (o siglos) con otros académicos y formuladores de políticas en el tiempo y el espacio.
+
+  - [Sobre el uso de 'Dark Logic' para anticipar fallas y planificarlas](https://jech.bmj.com/content/jech/69/1/95.full.pdf).
+
+  - El enfoque [pre-mortem para la gestión de proyectos](https://en.wikipedia.org/wiki/Pre-mortem) para la gestión de proyectos en el que el equipo imagina que un proyecto ha fallado antes de lanzarlo.
+
+### Hacer frente a las limitaciones del mundo real
+
+ - Trabajar con socios: humildad, respeto y escucha
+ - Presupuestos y límites físicos en el tamaño del grupo experimental (límites en el control de la aleatorización)
+    - Ejemplo: diseños aleatorizados por conglomerados con un número reducido de conglomerados
+
+### Planes de preanálisis
+
+### Cómo presentar una tabla o gráfico de resultados.
+
+ - Tufte sobre la relación entre tinta e información.
+ - @ gerber_field_2012, Capítulo 13
+
+### Validez externa, generalización, escalado
+
+## Recursos:
+
+### Guía de métodos EGAP
+
+  - Guía de métodos EGAP [10 cosas que debe saber sobre el flujo de trabajo del proyecto](https://egap.org/resource/10-things-to-know-about-project-workflow/) (que se basa en @ bowers2016future).
+ - Guía de métodos EGAP [10 cosas que debe saber sobre los planes de análisis previo](https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/)
+
+### Libros, capítulos y artículos
+
+  - @cartwright2012evidence advierte sobre el uso simplista de los resultados de un RCT para orientar las políticas públicas.
+
+  - Ver también @bowerstesta2019epp y especialmente su discusión de @giacomini2009theory con respecto a la importancia de la teoría para conectar el diseño de investigación y las políticas públicas.
+
+### Resumen de políticas de EGAP
+
