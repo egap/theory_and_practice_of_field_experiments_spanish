@@ -19,8 +19,8 @@ jobs:
         with:
           r-version: '4.1.1'
 
-      - name: Install renv from github
-        run: Rscript -e 'if(!requireNamespace("remotes")){install.packages("remotes");remotes::install_github("rstudio/renv")} else {remotes::install_github("rstudio/renv")}'
+      - name: Install renv
+        run: Rscript -e 'install.packages("renv")'
 
       - uses: actions/cache@v2
         with:
