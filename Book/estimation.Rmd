@@ -6,7 +6,7 @@ En este módulo presentamos varios tipos de estimandos, es decir, la cantidad ob
 
 ## Contenido principal
 
-- Un **efecto causal**, $\tau_i$, es una comparación de las salidas potenciales no observadas para cada unidad $i$.  Esta puede ser, por ejemplo, una diferencia o un radio de salidades potenciales no observadas.
+- Un **efecto causal**, $\tau_i$, es una comparación de las resultados potenciales no observadas para cada unidad $i$.  Esta puede ser, por ejemplo, una diferencia o un radio de salidades potenciales no observadas.
 
 - Para obtener más información sobre $\tau_i$, podemos tratar $\tau_{i}$ como un **estimando** o cantidad objetivo a estimar (este módulo) o como una cantidad objetivo sobre la que se puede formular una hipótesis ([módulo de pruebas de hipótesis](pruebas-de-hipótesis.html)).
 

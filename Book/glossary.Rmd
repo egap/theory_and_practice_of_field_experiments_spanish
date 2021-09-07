@@ -11,29 +11,29 @@ A continuación presentamos una recopilación de los términos técnicos que se 
 Puede consultar el módulo de [inferencia causal](inferencia-causal.html), [estimandos y estimadores](estimandos-y-estimadores.html).
 
 
-- **Salidas potenciales $Y_i(T)$** El valor que la unidad $i$ *tomaría* en la variable $Y$ si fuese asignada al tratamiento  $T$. Se asume que este valor es fijo para un momento dado en el tiempo. En el caso de que solo haya un tratamiento,   $T$ puede recibir el valor 0 para el grupo control o 1 para el grupo tratado. Ver el módulo de [inferencia causal](inferencia-causal.html).
+- **Resultados potenciales $Y_i(T)$** El valor que la unidad $i$ *tomaría* en la variable $Y$ si fuese asignada al tratamiento  $T$. Se asume que este valor es fijo para un momento dado en el tiempo. En el caso de que solo haya un tratamiento,   $T$ puede recibir el valor 0 para el grupo control o 1 para el grupo tratado. Ver el módulo de [inferencia causal](inferencia-causal.html).
 
 
-- **Efecto del tratamiento $\tau_i$ para la unidad $i$** La diferencia entre las salidas potenciales  bajo las dos condiciones posibles de tratamiento para la unidad $i$. Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, $ Y_i (1) -Y_i (0) $. Ver el módulo sobre [inferencia causal](inferencia-causal.html).
+- **Efecto del tratamiento $\tau_i$ para la unidad $i$** La diferencia entre las resultados potenciales  bajo las dos condiciones posibles de tratamiento para la unidad $i$. Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, $ Y_i (1) -Y_i (0) $. Ver el módulo sobre [inferencia causal](inferencia-causal.html).
 
 - **El problema fundamental de la inferencia causal** en el marco contrafactual.  No podemos observar $Y_i(1)$ y $Y_i(0)$ al mismo tiempo para ninguna unidad, por lo que no podemos calcular $\tau_i$ directamente. Ver el módulo de [inferencia causal](inference-causal.html).
 
-- **Estimando** Aquella cantidad que se quiere estimar. Un ejemplo de un estimando es el efecto promedio del tratamiento. En la inferencia causal contrafactual este es una función de salidas potenciales, es decir cantidades que no pueden ser observadas en su totalidad. Ver el módulo de [estimandos and estimadores](estimandos-y-estimadores.html).
+- **Estimando** Aquella cantidad que se quiere estimar. Un ejemplo de un estimando es el efecto promedio del tratamiento. En la inferencia causal contrafactual este es una función de resultados potenciales, es decir cantidades que no pueden ser observadas en su totalidad. Ver el módulo de [estimandos and estimadores](estimandos-y-estimadores.html).
 - **Estimador** Cómo estimar el valor de un estimando haciendo uso de los datos  que se tienen disponibles  (es decir, los datos observados). Un ejemplo de un estimador es la diferencia de medias. Ver el módulo de [estimandos y estimadores](estimandos-y-estimadores.html).
   - **Efecto promedio del tratamiento (average treatment effect, ATE)** El efecto promedio del tratamiento  para todas las unidades en el grupo de estudio.  Este es un tipo de **estimando**.  Si definimos  $\tau_i$ igual a $Y_i(1)-Y_i(0)$, entonces el ATE es $\overline{Y_i(1)-Y_i(0)}$, lo cual es equivalente a $\overline{{Y}_i(1)}-\overline{{Y}_i(0)}$. Dese cuenta que no utilizamos la notación del tipo $E[Y_i (1)]$, porque $E[]$ significa "el promedio sobre un número repetido de operaciones", mientras que  $\overline{Y}$ significa "el promedio sobre un número de observaciones". Ver el módulo de [inferencia causal](inferencia-causal.html) y el módulo de [estimandos y estimadores](estimandos-y-estimadores.html).
 - **Muestreo aleatorio** Seleccionar sujetos de una población con
   probabilidades conocidas estrictamente entre 0 y 1.
 - **Experimentos con $k$ brazos de tratamientos** Un experimento que tiene $k$ condiciones de tratamientos
   (incluyendo el control). Ver el módulo de [aleatorización](aleatorizaciónn.html).
-- **Asignación aleatoria a tratamientos**. Asignar sujetos a las distintas condiciones en un experimento con probabilidades conocidas que estén estrictamente entre 0 y 1. Esto es equivalente a hacer muestreo aleatorio con reemplazo del universo de salidas potenciales. Existen distintas formas de hacer asignación aleatoria a tratamientos: simple, completa, por conglomerados, por bloques, por bloques y conglomerados. Ver el módulo de [aleatorización](aleatorización.html).
+- **Asignación aleatoria a tratamientos**. Asignar sujetos a las distintas condiciones en un experimento con probabilidades conocidas que estén estrictamente entre 0 y 1. Esto es equivalente a hacer muestreo aleatorio con reemplazo del universo de resultados potenciales. Existen distintas formas de hacer asignación aleatoria a tratamientos: simple, completa, por conglomerados, por bloques, por bloques y conglomerados. Ver el módulo de [aleatorización](aleatorización.html).
 - **Validez externa** Los resultados de un estudio pueden informarnos acerca de otros contextos. Por ejemplo, en otros lugares o para otras intervenciones.
 
 ## Inferencia estadística
 
 Puede consultar los módulos de [pruebas de hipótesis](pruebas-de-hipótesis.html) y [poder estadístico](poder-estadístico-y-diagnosticandos-del-diseño.html).
 
-- **Hipótesis** Un enunciado simple, claro y refutable acerca del mundo. En la inferencia causal contrafactual es una afirmación acerca de la relación entre las salidas potenciales, por ejemplo: $H_0: Y_i(T_i=0) = Y_i(T_i=1) + \tau_i$ es la hipótesis que supone que la salida potencial  de la unidad $i$ cuando es tratada es igual a la
-  salida potencial de esa misma unidad cuando está en el grupo de control más un efecto adicional. Ver el módulo de [pruebas de hipótesis](pruebas-de-hipótesis.html).
+- **Hipótesis** Un enunciado simple, claro y refutable acerca del mundo. En la inferencia causal contrafactual es una afirmación acerca de la relación entre las resultados potenciales, por ejemplo: $H_0: Y_i(T_i=0) = Y_i(T_i=1) + \tau_i$ es la hipótesis que supone que la resultado potencial  de la unidad $i$ cuando es tratada es igual a la
+  resultado potencial de esa misma unidad cuando está en el grupo de control más un efecto adicional. Ver el módulo de [pruebas de hipótesis](pruebas-de-hipótesis.html).
 - **Hipótesis nula**  Un enunciado sobre el mundo que puede ser rechazado una vez observemos los datos recolectados.  Ver el módulo de [pruebas de hipótesis](pruebas-de-hipótesis.html).
 - **Hipótesis nula tajante de efecto cero** La hipótesis nula de que el tratamiento no tiene efecto sobre ningún sujeto.  Esto quiere decir, $Y_i(1)=Y_i(0)$ para todo $i$. Lo que se puede escribir como: $H_0: Y_i(T_i=0) = Y_i(T_i=1)$.  Ver el módulo de
   [pruebas de hipótesis](pruebas-de-hipótesis.html).
@@ -54,7 +54,7 @@ Puede consultar los módulos de [pruebas de hipótesis](pruebas-de-hipótesis.ht
     - Ruido de la variable de interés
     -  Nivel de significancia ($\alpha$, fijado en un valor específico por convención )
     -  Otros factores, incluyendo la proporción de unidades que son asignadas a los distintos tratamientos.
-- **Correlación interna de los conglomerados**  Qué tan correlacionadas están las salidas potenciales de unidades que pertenecen a un mismo conglomerado, en relación con sus correlaciones a través de conglomerados. Si la correlación interna de los conglomerados es alta, perjudica al poder estadístico.
+- **Correlación interna de los conglomerados**  Qué tan correlacionadas están las resultados potenciales de unidades que pertenecen a un mismo conglomerado, en relación con sus correlaciones a través de conglomerados. Si la correlación interna de los conglomerados es alta, perjudica al poder estadístico.
 - **Insesgado** Un estimador es insesgado si se *espera* que devuelva el valor correcto. Esto significa que si el experimento se repitiera muchas veces, algunas de ellas el estimado será muy alto y otras muy bajo, pero en promedio producirá el valor correcto. Ver el módulo de [estimando y estimadores](estimandos-y-estimadores.html).
 - **Sesgo** El sesgo es la diferencia entre el valor promedio del estimador calculado a partir de su distribución de muestreo y el valor fijo del estimando. Ver el módulo de [estimandos y estimadores](estimandos-y-estimadores.html).
 - **Consistencia de un estimador** Un estimador cuyos resultados se van acercando al valor real del estimando a medida que el tamaño de la muestra aumenta es un *estimador consistente* de ese estimando. Un estimador consistente puede o no ser insesgado. Ver el módulo de [estimandos y estimadores](estimandos-y-estimadores.html).

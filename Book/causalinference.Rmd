@@ -6,7 +6,7 @@ Gran parte del estudio de las ciencias sociales gira en torno a la causalidad. N
 A lo largo de la última década, el estudio de las ciencias sociales se ha vuelto mucho más riguroso al momento de hacer afirmaciones de tipo causal, basándose en una larga historia de trabajo sobre causalidad que se remonta a los escritos clásicos de [Fisher y Rubin](# causalinference-classics). El uso de experimentos se ha vuelto cada vez más común y la aleatorización se ha convertido en la herramienta ideal para abordar temas de causalidad.
 
 
-En este módulo presentamos el enfoque contrafactual de la inferencia causal y cómo se pueden interpretar las afirmaciones de tipo causal. Presentamos el marco de salidas potenciales (potential outcomes)  y cómo la asignación aleatoria nos ayuda a hacer afirmaciones sobre lo que habría sucedido en ausencia de alguna política, acción o programa que estudiamos. También discutimos los tres supuestos básicos necesarios para la inferencia causal: asignación aleatoria de sujetos a tratamientos, no interferencia y excluibilidad.
+En este módulo presentamos el enfoque contrafactual de la inferencia causal y cómo se pueden interpretar las afirmaciones de tipo causal. Presentamos el marco de resultados potenciales (potential outcomes)  y cómo la asignación aleatoria nos ayuda a hacer afirmaciones sobre lo que habría sucedido en ausencia de alguna política, acción o programa que estudiamos. También discutimos los tres supuestos básicos necesarios para la inferencia causal: asignación aleatoria de sujetos a tratamientos, no interferencia y excluibilidad.
 
 
 
@@ -15,7 +15,7 @@ En este módulo presentamos el enfoque contrafactual de la inferencia causal y c
 
  - ¿A qué nos referimos cuando decimos que algo es una **causa** de algo más? ¿Y por qué es importante ser claro acerca de lo que una afirmación de tipo causal quiere decir?
 
-- Una introducción al tema de **salidas potenciales** como forma para pensar en alternativas para posibles versiones del mundo.
+- Una introducción al tema de **resultados potenciales** como forma para pensar en alternativas para posibles versiones del mundo.
 
  - La **aleatorización** nos ayuda a entender las afirmaciones contrafactuales de tipo causal.
  
@@ -78,7 +78,7 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de 
 
 - [@fisher_design_1935]. Fisher presenta la idea de aleatorización y pruebas de hipótesis como forma de entender a la inferencia causal.
 
-- [@rubin:1974]. Rubin presenta el concepto de salidas potenciales y conecta el concepto de causalidad a la inferencia estadística.
+- [@rubin:1974]. Rubin presenta el concepto de resultados potenciales y conecta el concepto de causalidad a la inferencia estadística.
 
 #### Trabajos contemporáneos 
 
