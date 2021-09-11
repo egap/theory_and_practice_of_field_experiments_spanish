@@ -14,7 +14,7 @@ Puede consultar el módulo de [inferencia causal](inferencia-causal.html), [esti
 - **Resultados potenciales $Y_i(T)$** El valor que la unidad $i$ *tomaría* en la variable $Y$ si fuese asignada al tratamiento  $T$. Se asume que este valor es fijo para un momento dado en el tiempo. En el caso de que solo haya un tratamiento,   $T$ puede recibir el valor 0 para el grupo control o 1 para el grupo tratado. Ver el módulo de [inferencia causal](inferencia-causal.html).
 
 
-- **Efecto del tratamiento $\tau_i$ para la unidad $i$** La diferencia entre las resultados potenciales  bajo las dos condiciones posibles de tratamiento para la unidad $i$. Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, $ Y_i (1) -Y_i (0) $. Ver el módulo sobre [inferencia causal](inferencia-causal.html).
+- **Efecto del tratamiento $\tau_i$ para la unidad $i$** La diferencia entre los resultados potenciales  bajo las dos condiciones posibles de tratamiento para la unidad $i$. Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, $ Y_i (1) -Y_i (0) $. Ver el módulo sobre [inferencia causal](inferencia-causal.html).
 
 - **El problema fundamental de la inferencia causal** en el marco contrafactual.  No podemos observar $Y_i(1)$ y $Y_i(0)$ al mismo tiempo para ninguna unidad, por lo que no podemos calcular $\tau_i$ directamente. Ver el módulo de [inferencia causal](inference-causal.html).
 
@@ -32,7 +32,7 @@ Puede consultar el módulo de [inferencia causal](inferencia-causal.html), [esti
 
 Puede consultar los módulos de [pruebas de hipótesis](pruebas-de-hipótesis.html) y [poder estadístico](poder-estadístico-y-diagnosticandos-del-diseño.html).
 
-- **Hipótesis** Un enunciado simple, claro y refutable acerca del mundo. En la inferencia causal contrafactual es una afirmación acerca de la relación entre las resultados potenciales, por ejemplo: $H_0: Y_i(T_i=0) = Y_i(T_i=1) + \tau_i$ es la hipótesis que supone que la resultado potencial  de la unidad $i$ cuando es tratada es igual a la
+- **Hipótesis** Un enunciado simple, claro y refutable acerca del mundo. En la inferencia causal contrafactual es una afirmación acerca de la relación entre los resultados potenciales, por ejemplo: $H_0: Y_i(T_i=0) = Y_i(T_i=1) + \tau_i$ es la hipótesis que supone que la resultado potencial  de la unidad $i$ cuando es tratada es igual a la
   resultado potencial de esa misma unidad cuando está en el grupo de control más un efecto adicional. Ver el módulo de [pruebas de hipótesis](pruebas-de-hipótesis.html).
 - **Hipótesis nula**  Un enunciado sobre el mundo que puede ser rechazado una vez observemos los datos recolectados.  Ver el módulo de [pruebas de hipótesis](pruebas-de-hipótesis.html).
 - **Hipótesis nula tajante de efecto cero** La hipótesis nula de que el tratamiento no tiene efecto sobre ningún sujeto.  Esto quiere decir, $Y_i(1)=Y_i(0)$ para todo $i$. Lo que se puede escribir como: $H_0: Y_i(T_i=0) = Y_i(T_i=1)$.  Ver el módulo de
@@ -54,7 +54,7 @@ Puede consultar los módulos de [pruebas de hipótesis](pruebas-de-hipótesis.ht
     - Ruido de la variable de interés
     -  Nivel de significancia ($\alpha$, fijado en un valor específico por convención )
     -  Otros factores, incluyendo la proporción de unidades que son asignadas a los distintos tratamientos.
-- **Correlación interna de los conglomerados**  Qué tan correlacionadas están las resultados potenciales de unidades que pertenecen a un mismo conglomerado, en relación con sus correlaciones a través de conglomerados. Si la correlación interna de los conglomerados es alta, perjudica al poder estadístico.
+- **Correlación interna de los conglomerados**  Qué tan correlacionadas están los resultados potenciales de unidades que pertenecen a un mismo conglomerado, en relación con sus correlaciones a través de conglomerados. Si la correlación interna de los conglomerados es alta, perjudica al poder estadístico.
 - **Insesgado** Un estimador es insesgado si se *espera* que devuelva el valor correcto. Esto significa que si el experimento se repitiera muchas veces, algunas de ellas el estimado será muy alto y otras muy bajo, pero en promedio producirá el valor correcto. Ver el módulo de [estimando y estimadores](estimandos-y-estimadores.html).
 - **Sesgo** El sesgo es la diferencia entre el valor promedio del estimador calculado a partir de su distribución de muestreo y el valor fijo del estimando. Ver el módulo de [estimandos y estimadores](estimandos-y-estimadores.html).
 - **Consistencia de un estimador** Un estimador cuyos resultados se van acercando al valor real del estimando a medida que el tamaño de la muestra aumenta es un *estimador consistente* de ese estimando. Un estimador consistente puede o no ser insesgado. Ver el módulo de [estimandos y estimadores](estimandos-y-estimadores.html).
