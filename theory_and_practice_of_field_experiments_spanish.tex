@@ -147,7 +147,7 @@
 \title{La teoría y la práctica de los experimentos de campo:\\
 Una introducción de los Learning Days de EGAP}
 \author{Jake Bowers,\footnote{El orden en el que aparecen los autores fue generado aleatoriamente. \url{https://jakebowers.org}} Maarten Voors,\footnote{\url{https://sites.google.com/site/maartenvoors/}} and Nahomi Ichino\footnote{\url{https://nahomi.github.io/}}. Traducido por Lily Medina\footnote{\url{https://lilymedina.github.io/}}}
-\date{02-09-21}
+\date{14-09-21}
 
 \begin{document}
 \maketitle
@@ -349,7 +349,7 @@ Gran parte del estudio de las ciencias sociales gira en torno a la causalidad. N
 
 A lo largo de la última década, el estudio de las ciencias sociales se ha vuelto mucho más riguroso al momento de hacer afirmaciones de tipo causal, basándose en una larga historia de trabajo sobre causalidad que se remonta a los escritos clásicos de \protect\hyperlink{ux5cux2520causalinference-classics}{Fisher y Rubin}. El uso de experimentos se ha vuelto cada vez más común y la aleatorización se ha convertido en la herramienta ideal para abordar temas de causalidad.
 
-En este módulo presentamos el enfoque contrafactual de la inferencia causal y cómo se pueden interpretar las afirmaciones de tipo causal. Presentamos el marco de salidas potenciales (potential outcomes) y cómo la asignación aleatoria nos ayuda a hacer afirmaciones sobre lo que habría sucedido en ausencia de alguna política, acción o programa que estudiamos. También discutimos los tres supuestos básicos necesarios para la inferencia causal: asignación aleatoria de sujetos a tratamientos, no interferencia y excluibilidad.
+En este módulo presentamos el enfoque contrafactual de la inferencia causal y cómo se pueden interpretar las afirmaciones de tipo causal. Presentamos el marco de resultados potenciales (potential outcomes) y cómo la asignación aleatoria nos ayuda a hacer afirmaciones sobre lo que habría sucedido en ausencia de alguna política, acción o programa que estudiamos. También discutimos los tres supuestos básicos necesarios para la inferencia causal: asignación aleatoria de sujetos a tratamientos, no interferencia y excluibilidad.
 
 \hypertarget{contenido-principal-1}{%
 \section{Contenido principal}\label{contenido-principal-1}}
@@ -358,7 +358,7 @@ En este módulo presentamos el enfoque contrafactual de la inferencia causal y c
 \item
   ¿A qué nos referimos cuando decimos que algo es una \textbf{causa} de algo más? ¿Y por qué es importante ser claro acerca de lo que una afirmación de tipo causal quiere decir?
 \item
-  Una introducción al tema de \textbf{salidas potenciales} como forma para pensar en alternativas para posibles versiones del mundo.
+  Una introducción al tema de \textbf{resultados potenciales} como forma para pensar en alternativas para posibles versiones del mundo.
 \item
   La \textbf{aleatorización} nos ayuda a entender las afirmaciones contrafactuales de tipo causal.
 \item
@@ -431,7 +431,7 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de 
 \item
   \autocite{fisher_design_1935}. Fisher presenta la idea de aleatorización y pruebas de hipótesis como forma de entender a la inferencia causal.
 \item
-  \autocite{rubin:1974}. Rubin presenta el concepto de salidas potenciales y conecta el concepto de causalidad a la inferencia estadística.
+  \autocite{rubin:1974}. Rubin presenta el concepto de resultados potenciales y conecta el concepto de causalidad a la inferencia estadística.
 \end{itemize}
 
 \hypertarget{trabajos-contemporuxe1neos}{%
@@ -733,7 +733,7 @@ En este módulo presentamos varios tipos de estimandos, es decir, la cantidad ob
 
 \begin{itemize}
 \item
-  Un \textbf{efecto causal}, \(\tau_i\), es una comparación de las salidas potenciales no observadas para cada unidad \(i\). Esta puede ser, por ejemplo, una diferencia o un radio de salidades potenciales no observadas.
+  Un \textbf{efecto causal}, \(\tau_i\), es una comparación de los resultados potenciales no observadas para cada unidad \(i\). Esta puede ser, por ejemplo, una diferencia o un radio de salidades potenciales no observadas.
 \item
   Para obtener más información sobre \(\tau_i\), podemos tratar \(\tau_{i}\) como un \textbf{estimando} o cantidad objetivo a estimar (este módulo) o como una cantidad objetivo sobre la que se puede formular una hipótesis (\href{pruebas-de-hipótesis.html}{módulo de pruebas de hipótesis}).
 \item
@@ -1270,13 +1270,13 @@ Puede consultar el módulo de \href{inferencia-causal.html}{inferencia causal}, 
 
 \begin{itemize}
 \item
-  \textbf{Salidas potenciales \(Y_i(T)\)} El valor que la unidad \(i\) \emph{tomaría} en la variable \(Y\) si fuese asignada al tratamiento \(T\). Se asume que este valor es fijo para un momento dado en el tiempo. En el caso de que solo haya un tratamiento, \(T\) puede recibir el valor 0 para el grupo control o 1 para el grupo tratado. Ver el módulo de \href{inferencia-causal.html}{inferencia causal}.
+  \textbf{Resultados potenciales \(Y_i(T)\)} El valor que la unidad \(i\) \emph{tomaría} en la variable \(Y\) si fuese asignada al tratamiento \(T\). Se asume que este valor es fijo para un momento dado en el tiempo. En el caso de que solo haya un tratamiento, \(T\) puede recibir el valor 0 para el grupo control o 1 para el grupo tratado. Ver el módulo de \href{inferencia-causal.html}{inferencia causal}.
 \item
-  \textbf{Efecto del tratamiento \(\tau_i\) para la unidad \(i\)} La diferencia entre las salidas potenciales bajo las dos condiciones posibles de tratamiento para la unidad \(i\). Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, \$ Y\_i (1) -Y\_i (0) \$. Ver el módulo sobre \href{inferencia-causal.html}{inferencia causal}.
+  \textbf{Efecto del tratamiento \(\tau_i\) para la unidad \(i\)} La diferencia entre los resultados potenciales bajo las dos condiciones posibles de tratamiento para la unidad \(i\). Por lo general, definimos el efecto del tratamiento como la diferencia en los valores potenciales bajo el tratamiento y bajo control, \$ Y\_i (1) -Y\_i (0) \$. Ver el módulo sobre \href{inferencia-causal.html}{inferencia causal}.
 \item
   \textbf{El problema fundamental de la inferencia causal} en el marco contrafactual. No podemos observar \(Y_i(1)\) y \(Y_i(0)\) al mismo tiempo para ninguna unidad, por lo que no podemos calcular \(\tau_i\) directamente. Ver el módulo de \href{inference-causal.html}{inferencia causal}.
 \item
-  \textbf{Estimando} Aquella cantidad que se quiere estimar. Un ejemplo de un estimando es el efecto promedio del tratamiento. En la inferencia causal contrafactual este es una función de salidas potenciales, es decir cantidades que no pueden ser observadas en su totalidad. Ver el módulo de \href{estimandos-y-estimadores.html}{estimandos and estimadores}.
+  \textbf{Estimando} Aquella cantidad que se quiere estimar. Un ejemplo de un estimando es el efecto promedio del tratamiento. En la inferencia causal contrafactual este es una función de resultados potenciales, es decir cantidades que no pueden ser observadas en su totalidad. Ver el módulo de \href{estimandos-y-estimadores.html}{estimandos and estimadores}.
 \item
   \textbf{Estimador} Cómo estimar el valor de un estimando haciendo uso de los datos que se tienen disponibles (es decir, los datos observados). Un ejemplo de un estimador es la diferencia de medias. Ver el módulo de \href{estimandos-y-estimadores.html}{estimandos y estimadores}.
 
@@ -1292,7 +1292,7 @@ Puede consultar el módulo de \href{inferencia-causal.html}{inferencia causal}, 
   \textbf{Experimentos con \(k\) brazos de tratamientos} Un experimento que tiene \(k\) condiciones de tratamientos
   (incluyendo el control). Ver el módulo de \href{aleatorizaciónn.html}{aleatorización}.
 \item
-  \textbf{Asignación aleatoria a tratamientos}. Asignar sujetos a las distintas condiciones en un experimento con probabilidades conocidas que estén estrictamente entre 0 y 1. Esto es equivalente a hacer muestreo aleatorio con reemplazo del universo de salidas potenciales. Existen distintas formas de hacer asignación aleatoria a tratamientos: simple, completa, por conglomerados, por bloques, por bloques y conglomerados. Ver el módulo de \href{aleatorización.html}{aleatorización}.
+  \textbf{Asignación aleatoria a tratamientos}. Asignar sujetos a las distintas condiciones en un experimento con probabilidades conocidas que estén estrictamente entre 0 y 1. Esto es equivalente a hacer muestreo aleatorio con reemplazo del universo de resultados potenciales. Existen distintas formas de hacer asignación aleatoria a tratamientos: simple, completa, por conglomerados, por bloques, por bloques y conglomerados. Ver el módulo de \href{aleatorización.html}{aleatorización}.
 \item
   \textbf{Validez externa} Los resultados de un estudio pueden informarnos acerca de otros contextos. Por ejemplo, en otros lugares o para otras intervenciones.
 \end{itemize}
@@ -1305,8 +1305,8 @@ Puede consultar los módulos de \href{pruebas-de-hipótesis.html}{pruebas de hip
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Hipótesis} Un enunciado simple, claro y refutable acerca del mundo. En la inferencia causal contrafactual es una afirmación acerca de la relación entre las salidas potenciales, por ejemplo: \(H_0: Y_i(T_i=0) = Y_i(T_i=1) + \tau_i\) es la hipótesis que supone que la salida potencial de la unidad \(i\) cuando es tratada es igual a la
-  salida potencial de esa misma unidad cuando está en el grupo de control más un efecto adicional. Ver el módulo de \href{pruebas-de-hipótesis.html}{pruebas de hipótesis}.
+  \textbf{Hipótesis} Un enunciado simple, claro y refutable acerca del mundo. En la inferencia causal contrafactual es una afirmación acerca de la relación entre los resultados potenciales, por ejemplo: \(H_0: Y_i(T_i=0) = Y_i(T_i=1) + \tau_i\) es la hipótesis que supone que la resultado potencial de la unidad \(i\) cuando es tratada es igual a la
+  resultado potencial de esa misma unidad cuando está en el grupo de control más un efecto adicional. Ver el módulo de \href{pruebas-de-hipótesis.html}{pruebas de hipótesis}.
 \item
   \textbf{Hipótesis nula} Un enunciado sobre el mundo que puede ser rechazado una vez observemos los datos recolectados. Ver el módulo de \href{pruebas-de-hipótesis.html}{pruebas de hipótesis}.
 \item
@@ -1347,7 +1347,7 @@ Puede consultar los módulos de \href{pruebas-de-hipótesis.html}{pruebas de hip
     Otros factores, incluyendo la proporción de unidades que son asignadas a los distintos tratamientos.
   \end{itemize}
 \item
-  \textbf{Correlación interna de los conglomerados} Qué tan correlacionadas están las salidas potenciales de unidades que pertenecen a un mismo conglomerado, en relación con sus correlaciones a través de conglomerados. Si la correlación interna de los conglomerados es alta, perjudica al poder estadístico.
+  \textbf{Correlación interna de los conglomerados} Qué tan correlacionadas están los resultados potenciales de unidades que pertenecen a un mismo conglomerado, en relación con sus correlaciones a través de conglomerados. Si la correlación interna de los conglomerados es alta, perjudica al poder estadístico.
 \item
   \textbf{Insesgado} Un estimador es insesgado si se \emph{espera} que devuelva el valor correcto. Esto significa que si el experimento se repitiera muchas veces, algunas de ellas el estimado será muy alto y otras muy bajo, pero en promedio producirá el valor correcto. Ver el módulo de \href{estimandos-y-estimadores.html}{estimando y estimadores}.
 \item
