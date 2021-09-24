@@ -92,7 +92,7 @@ calculado para todas las condiciones del otro tratamiento y ajustado por la prop
 Puede consultar el módulo de  [amenazas](amenazas-a-la-validez-interna-de-los-experimentos-aleatorios.html).
 
 - **Efecto Hawthorne** Ocurre cuando los sujetos se comportan de una forma distinta porque saben que están siendo observados.
-- **Propagación** Ocurre cuando un sujeto le afecta el tratamiento que otro sujeto recibe.
+- **Derrame** Ocurre cuando un sujeto le afecta el tratamiento que otro sujeto recibe.
   Ejemplo: mi salud depende si mi vecino se vacuna, pero también de si yo me vacuno.
 - **Deserción** Ocurre cuando las variables de interés no se miden para algunos sujetos.  Esto puede ser causado, por ejemplo, porque la gente migra, se niega a responder la encuesta de cierre o inclusive muere. Esto es especialmente perjudicial para la inferencia cuando la deserción está correlacionada con el tratamiento que se recibe.
 - **Cumplimiento** El tratamiento que recibe una unidad coincide con el tratamiento al que fue asignada. Ejemplo de incumplimiento:  una unidad que fue asignada al tratamiento finalmente no lo toma. Ejemplo de cumplimiento: una unidad que fue asignada al grupo control no recibe el tratamiento.

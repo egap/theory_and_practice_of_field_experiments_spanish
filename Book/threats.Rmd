@@ -1,6 +1,6 @@
 # Amenazas a la validez interna de los experimentos aleatorios {.tabset}
 
-Los experimentos aleatorios pueden  tener problemas que disminuyan su capacidad para detectar efectos causales, es decir, problemas que amenacen la validez interna de los experimentos aleatorios. Por ejemplo, algunas unidades pueden tener datos faltantes para la variable de interés y esta ausencia de datos puede haber sido ocasionada por el mismo tratamiento; puede que algunas unidades no reciban el tratamiento que se les asignó, o que estén sujetas a efectos de propagación del tratamiento si alguien próximo a estas fue tratado.
+Los experimentos aleatorios pueden  tener problemas que disminuyan su capacidad para detectar efectos causales, es decir, problemas que amenacen la validez interna de los experimentos aleatorios. Por ejemplo, algunas unidades pueden tener datos faltantes para la variable de interés y esta ausencia de datos puede haber sido ocasionada por el mismo tratamiento; puede que algunas unidades no reciban el tratamiento que se les asignó, o que estén sujetas a efectos de derrame del tratamiento si alguien próximo a estas fue tratado.
 
 En este módulo cubrimos algunas amenazas comunes y prácticas para aprender a evitarlas o solucionarlas.
 
@@ -22,9 +22,9 @@ En este módulo cubrimos algunas amenazas comunes y prácticas para aprender a e
  
      - El efecto local promedio del tratamiento (local average treatment effect, LATE),  también conocido como efecto causal promedio del cumplidor (complier average causal effect, CACE) es el efecto promedio de tomar el tratamiento considerando unicamente las unidades que fueron asignadas a recibir el tratamiento y sí lo recibieron, y ningún otro tipo de unidades. Es posible estimar el efecto local promedio del tratamiento si el supuesto de monotonicidad y la restricción de exclusión se cumplen, incluso cuando haya incumplimiento en la asignación por parte de algunas unidades.
 
- - **"El efecto de propagación" o la interferencia entre unidades** es una violación de uno de los supuestos básicos de la inferencia causal ([inferencia causal](causalinference.html)).
+ - **"El efecto de derrame" o la interferencia entre unidades** es una violación de uno de los supuestos básicos de la inferencia causal ([inferencia causal](causalinference.html)).
      
-      - Sin embargo, esto puede no ser un problema si se está interesado en los efectos de propagación y/o se ha diseñado la investigación para que sean tenidos en cuenta.
+      - Sin embargo, esto puede no ser un problema si se está interesado en los efectos de derrame y/o se ha diseñado la investigación para que sean tenidos en cuenta.
  
  - **El efecto Hawthorne** ocurre cuando los sujetos se comportan de manera diferente porque saben que están siendo observados.
  
@@ -68,4 +68,4 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones previas de 
 
 - [Informe 11 de políticas públicas de EGAP: Vehedores electorales y fraude en Ghana ](https://egap.org/resource/brief-11-election-observers-and-fraud-in-ghana/)
 
-- [Informe 16 de políticas públicas de EGAP: Efectos de propagación de vehedores en Ghana ](https://egap.org/resource/brief-16-spillover-effects-of-observers-in-ghana/)
+- [Informe 16 de políticas públicas de EGAP: Efectos de derrame de vehedores en Ghana ](https://egap.org/resource/brief-16-spillover-effects-of-observers-in-ghana/)
