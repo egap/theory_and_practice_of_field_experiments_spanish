@@ -147,7 +147,7 @@
 \title{La teoría y la práctica de los experimentos de campo:\\
 Una introducción de los Learning Days de EGAP}
 \author{Jake Bowers,\footnote{El orden en el que aparecen los autores fue generado aleatoriamente. \url{https://jakebowers.org}} Maarten Voors,\footnote{\url{https://sites.google.com/site/maartenvoors/}} and Nahomi Ichino\footnote{\url{https://nahomi.github.io/}}. Traducido por Lily Medina\footnote{\url{https://lilymedina.github.io/}}}
-\date{14-09-21}
+\date{24-09-21}
 
 \begin{document}
 \maketitle
@@ -789,7 +789,7 @@ También puede ver la discusión sobre los problemas que conlleva el estimar el 
 \item
   \href{https://egap.github.io/learningdays-resources/Slides/Examples/threats-benin.pdf}{Presentación sobre los problemas del diseño de los Learning Days de EGAP en la Escuela Africana de Economía, Abomey-Calavi, junio de 2019 (la primera sección se enfoca en diseños de aleatorización)}
 \item
-  \href{https://egap.github.io/learningdays-resources/Slides/Examples/spillovers_attrition-guatemala.pdf}{Presentación sobre propagación y deserción de los Learning Days de EGAP en la Ciudad de Guatemala, Guatemala, agosto de 2017}
+  \href{https://egap.github.io/learningdays-resources/Slides/Examples/spillovers_attrition-guatemala.pdf}{Presentación sobre derrame y deserción de los Learning Days de EGAP en la Ciudad de Guatemala, Guatemala, agosto de 2017}
 \item
   \href{https://egap.github.io/learningdays-resources/Slides/Examples/threats-guatemala.pdf}{Presentación sobre complicaciones en los Learning Days de EGAP en la Ciudad de Guatemala, Guatemala, agosto de 2017}
 \item
@@ -815,7 +815,7 @@ También puede ver la discusión sobre los problemas que conlleva el estimar el 
 \item
   Guía de métodos de EGAP \href{https://egap.org/resource/10-things-to-know-about-the-local-average-treatment-effect/}{10 cosas que debe saber sobre el efecto local promedio del tratamiento}
 \item
-  Guía de métodos de EGAP \href{https://egap.org/resource/10-things-to-know-about-spillovers/}{10 cosas que debe saber sobre efectos de propagación}
+  Guía de métodos de EGAP \href{https://egap.org/resource/10-things-to-know-about-spillovers/}{10 cosas que debe saber sobre efectos de derrame}
 \end{itemize}
 
 \hypertarget{libros-capuxedtulos-y-artuxedculos-3}{%
@@ -1047,7 +1047,7 @@ A continuación presentamos las diapositivas con el contenido principal que cubr
 
 \begin{itemize}
 \item
-  \href{https://egap.org/resource/brief-16-spillover-effects-of-observers-in-ghana/}{Informe 16 sobre políticas públicas de EGAP: Efectos de propagación de observadores en Ghana}
+  \href{https://egap.org/resource/brief-16-spillover-effects-of-observers-in-ghana/}{Informe 16 sobre políticas públicas de EGAP: Efectos de derrame de observadores en Ghana}
 \item
   \href{https://egap.org/resource/electoral-administration-in-kenya/}{Informe 67 sobre políticas públicas de EGAP: Administración electoral en Kenya}
 \end{itemize}
@@ -1055,7 +1055,7 @@ A continuación presentamos las diapositivas con el contenido principal que cubr
 \hypertarget{amenazas-a-la-validez-interna-de-los-experimentos-aleatorios}{%
 \chapter{Amenazas a la validez interna de los experimentos aleatorios}\label{amenazas-a-la-validez-interna-de-los-experimentos-aleatorios}}
 
-Los experimentos aleatorios pueden tener problemas que disminuyan su capacidad para detectar efectos causales, es decir, problemas que amenacen la validez interna de los experimentos aleatorios. Por ejemplo, algunas unidades pueden tener datos faltantes para la variable de interés y esta ausencia de datos puede haber sido ocasionada por el mismo tratamiento; puede que algunas unidades no reciban el tratamiento que se les asignó, o que estén sujetas a efectos de propagación del tratamiento si alguien próximo a estas fue tratado.
+Los experimentos aleatorios pueden tener problemas que disminuyan su capacidad para detectar efectos causales, es decir, problemas que amenacen la validez interna de los experimentos aleatorios. Por ejemplo, algunas unidades pueden tener datos faltantes para la variable de interés y esta ausencia de datos puede haber sido ocasionada por el mismo tratamiento; puede que algunas unidades no reciban el tratamiento que se les asignó, o que estén sujetas a efectos de derrame del tratamiento si alguien próximo a estas fue tratado.
 
 En este módulo cubrimos algunas amenazas comunes y prácticas para aprender a evitarlas o solucionarlas.
 
@@ -1086,12 +1086,12 @@ En este módulo cubrimos algunas amenazas comunes y prácticas para aprender a e
     El efecto local promedio del tratamiento (local average treatment effect, LATE), también conocido como efecto causal promedio del cumplidor (complier average causal effect, CACE) es el efecto promedio de tomar el tratamiento considerando unicamente las unidades que fueron asignadas a recibir el tratamiento y sí lo recibieron, y ningún otro tipo de unidades. Es posible estimar el efecto local promedio del tratamiento si el supuesto de monotonicidad y la restricción de exclusión se cumplen, incluso cuando haya incumplimiento en la asignación por parte de algunas unidades.
   \end{itemize}
 \item
-  \textbf{``El efecto de propagación'' o la interferencia entre unidades} es una violación de uno de los supuestos básicos de la inferencia causal (\href{causalinference.html}{inferencia causal}).
+  \textbf{``El efecto de derrame'' o la interferencia entre unidades} es una violación de uno de los supuestos básicos de la inferencia causal (\href{causalinference.html}{inferencia causal}).
 
   \begin{itemize}
   \tightlist
   \item
-    Sin embargo, esto puede no ser un problema si se está interesado en los efectos de propagación y/o se ha diseñado la investigación para que sean tenidos en cuenta.
+    Sin embargo, esto puede no ser un problema si se está interesado en los efectos de derrame y/o se ha diseñado la investigación para que sean tenidos en cuenta.
   \end{itemize}
 \item
   \textbf{El efecto Hawthorne} ocurre cuando los sujetos se comportan de manera diferente porque saben que están siendo observados.
@@ -1161,7 +1161,7 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones previas de 
 \item
   \href{https://egap.org/resource/brief-11-election-observers-and-fraud-in-ghana/}{Informe 11 de políticas públicas de EGAP: Vehedores electorales y fraude en Ghana}
 \item
-  \href{https://egap.org/resource/brief-16-spillover-effects-of-observers-in-ghana/}{Informe 16 de políticas públicas de EGAP: Efectos de propagación de vehedores en Ghana}
+  \href{https://egap.org/resource/brief-16-spillover-effects-of-observers-in-ghana/}{Informe 16 de políticas públicas de EGAP: Efectos de derrame de vehedores en Ghana}
 \end{itemize}
 
 \hypertarget{consideraciones-uxe9ticas}{%
@@ -1414,7 +1414,7 @@ Puede consultar el módulo de \href{amenazas-a-la-validez-interna-de-los-experim
 \item
   \textbf{Efecto Hawthorne} Ocurre cuando los sujetos se comportan de una forma distinta porque saben que están siendo observados.
 \item
-  \textbf{Propagación} Ocurre cuando un sujeto le afecta el tratamiento que otro sujeto recibe.
+  \textbf{Derrame} Ocurre cuando un sujeto le afecta el tratamiento que otro sujeto recibe.
   Ejemplo: mi salud depende si mi vecino se vacuna, pero también de si yo me vacuno.
 \item
   \textbf{Deserción} Ocurre cuando las variables de interés no se miden para algunos sujetos. Esto puede ser causado, por ejemplo, porque la gente migra, se niega a responder la encuesta de cierre o inclusive muere. Esto es especialmente perjudicial para la inferencia cuando la deserción está correlacionada con el tratamiento que se recibe.
