@@ -57,11 +57,11 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de 
 
 ### Guías de métodos de EGAP
 
- - Guía de métodos de EGAP [10 cosas que usted debe saber sobre poder estadístico](https://egap.org/resource/10-things-you-need-know-about-statistical-power/)
+ - Guía de métodos de EGAP [10 cosas que usted debe saber sobre poder estadístico](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-poder-estadistico/)
 
- - Guía de métodos de EGAP [10 cosas que usted debe saber sobre ajuste de covariables](https://egap.org/resource/10-things-to-know-about-covariate-adjustment/)
+ - Guía de métodos de EGAP [10 cosas que usted debe saber sobre ajuste de covariables](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-ajuste-de-covariables/)
  
- - Guía de métodos de EGAP [10 cosas que los efectos nulos pueden significar](https://egap.org/resource/10-things-your-null-result-might-mean/)
+ - Guía de métodos de EGAP [10 cosas que los efectos nulos pueden significar](https://egap.org/resource/10-things-your-null-result-might-mean/) (en inglés)
 
 ### Informes de EGAP sobre políticas públicas y PAPs
 
