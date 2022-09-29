@@ -91,9 +91,9 @@ Si desea, también puede ver las diapositivas para las charlas de diseño de ses
 
 ### Guía de métodos de EGAP 
 
-- Guía de métodos de EGAP [Las 10 cosas que usted debe saber sobre los planes de pre-análisis](https://egap.org/resource/10-things-to-know-about-pre-analysis-plans/)
+- Guía de métodos de EGAP [Las 10 cosas que usted debe saber sobre los planes de pre-análisis](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-los-planes-de-analisis-previos/)
 
-- Guía de métodos de EGAP [Las 10 cosas que usted debe saber sobre medición en experimentos](https://egap.org/resource/10-things-to-know-about-measurement-in-experiments/)
+- Guía de métodos de EGAP [Las 10 cosas que usted debe saber sobre medición en experimentos](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-las-mediciones-en-los-experimentos/)
 
 
 ### Libros, capítulos y artículos
