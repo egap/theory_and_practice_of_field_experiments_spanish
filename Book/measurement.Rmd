@@ -38,11 +38,11 @@ A continuación presentamos las diapositivas con el contenido principal que cubr
 
 ### Guías de métodos de EGAP
 
-- Guía de métodos de EGAP [10 cosas que usted debe saber sobre la medición en experimentos](https://egap.org/resource/10-things-to-know-about-measurement-in-experiments/)
+- Guía de métodos de EGAP [10 cosas que usted debe saber sobre la medición en experimentos](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-la-medicion-en-experimentos/)
 
-- Guía de métodos de EGAP [10 cosas que usted debe saber sobre el diseño de encuestas](https://egap.org/resource/10-things-to-know-about-survey-design/)
+- Guía de métodos de EGAP [10 cosas que usted debe saber sobre el diseño de encuestas](https://egap.org/resource/10-things-to-know-about-survey-design/) (en inglés)
 
-- Guía de métodos de EGAP [10 cosas que usted debe saber sobre la implementación de encuestas](https://egap.org/resource/10-things-to-know-about-survey-implementation/)
+- Guía de métodos de EGAP [10 cosas que usted debe saber sobre la implementación de encuestas](https://egap.org/resource/10-things-to-know-about-survey-implementation/) (en inglés)
 
 ### Libros, Capítulos y Artículos
 
