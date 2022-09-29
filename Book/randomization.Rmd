@@ -65,9 +65,9 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones previas de 
 
 ### Guías de métodos de EGAP
 
-- Guías de métodos de EGAP [Las 10 cosas que usted debe saber sobre aleatorización](https://egap.org/resource/10-things-to-know-about-randomization/)
+- Guías de métodos de EGAP [Las 10 cosas que usted debe saber sobre aleatorización](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-la-aleatorizacion/)
 
-- Guías de métodos de EGAPe [Las 10 cosas que usted debe saber sobre aleatorización por aglomerados](https://egap.org/resource/10-things-to-know-about-cluster-randomization/)
+- Guías de métodos de EGAP [Las 10 cosas que usted debe saber sobre aleatorización por aglomerados](https://egap.org/es/resource/10-cosas-sobre-la-aleatorizacion-por-aglomerados/)
 
 ### Libros, capítulos y artículos
 
