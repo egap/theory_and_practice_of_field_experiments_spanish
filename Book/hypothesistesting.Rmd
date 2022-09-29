@@ -64,9 +64,9 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones pasadas de 
 
 ### Guías de métodos de EGAP
 
-  - Guía de métodos de EGAP [10 Cosas que debe saber sobre las pruebas de hipótesis](https://egap.org/resource/10-things-to-know-about-hypothesis-testing/)
+  - Guía de métodos de EGAP [10 Cosas que debe saber sobre las pruebas de hipótesis](https://egap.org/es/resource/10-cosas-que-debe-saber-sobre-las-pruebas-de-hipotesis/)
 
-  - Guía de métodos de EGAP [10 Cosas que debe saber sobre comparaciones multiples](https://egap.org/resource/10-things-to-know-about-multiple-comparisons/)
+  - Guía de métodos de EGAP [10 Cosas que debe saber sobre comparaciones multiples](https://egap.org/resource/10-things-to-know-about-multiple-comparisons/) (en inglés)
 
 ### Libros, capítulos y artículos
 
