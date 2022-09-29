@@ -53,11 +53,11 @@ Si desea, también puede ver las diapositivas utilizadas en sesiones previas de 
 
 ### Guías de métodos de EGAP
 
-- Guía de métodos de EGAP [10 cosas que usted debe saber sobre datos faltantes](https://egap.org/resource/10-things-to-know-about-missing-data/)
+- Guía de métodos de EGAP [10 cosas que usted debe saber sobre datos faltantes](https://egap.org/resource/10-things-to-know-about-missing-data/) (en inglés)
 
-- Guía de métodos de EGAP [10 tipos de efectos de tratamiento que usted debe conocer](https://egap.org/resource/10-types-of-treatment-effect-you-should-know-about/)
+- Guía de métodos de EGAP [10 tipos de efectos de tratamiento que usted debe conocer](https://egap.org/es/resource/10-tipos-de-efectos-de-tratamiento-que-debe-conocer/)
 
-- Guía de métodos de EGAP [10 cosas que usted debe saber sobre el efecto local promedio del tratamiento](https://egap.org/resource/10-things-to-know-about-the-local-average-treatment-effect/)
+- Guía de métodos de EGAP [10 cosas que usted debe saber sobre el efecto local promedio del tratamiento](https://egap.org/resource/10-things-to-know-about-the-local-average-treatment-effect/) (en inglés)
 
 ### Libros, capítulos y artículos
 
